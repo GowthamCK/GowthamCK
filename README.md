@@ -73,7 +73,7 @@ I'm an Information Science Engineer passionate about building scalable web appli
 | :--- | :--- | :--- |
 | **Polygnan LMS** | `Django` `React` `Docker` | Scalable LMS supporting 500+ users with RBAC and assessment engine. |
 | **Friend-or-Foe** | `Python` `YOLO` `OpenCV` | Real-time edge inference system for defense using Raspberry Pi. |
-| **Kreeda.ai** | `YOLOv8` `CUDA` | Real-time exercise tracking research project. |
+<!--| **Kreeda.ai** | `YOLOv8` `CUDA` | Real-time exercise tracking research project. | -->
 
 ---
 
