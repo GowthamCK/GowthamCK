@@ -1,71 +1,97 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { personalInfo } from '../data';
-import { User, Mail, MapPin } from 'lucide-react';
+import { aboutText, systemSpecs } from '../data';
 
-const About = () => {
+function SectionHeader({ code, label, title }) {
     return (
-        <section id="about" className="py-20 bg-slate-900/50">
-            <div className="container mx-auto px-6">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-4xl font-bold text-center mb-16"
-                >
-                    <User className="inline-block mr-2 text-primary" /> About <span className="text-primary">Me</span>
-                </motion.h2>
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        >
+            <div className="flex items-center gap-3 mb-4">
+                <div className="w-1.5 h-1.5 bg-accent rounded-full" />
+                <span className="font-mono text-[10px] text-accent/50 tracking-[0.3em]">
+                    {code} // {label}
+                </span>
+                <div className="h-[1px] flex-1 bg-surface-border max-w-[100px]" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-tp tracking-tight">
+                {title}
+            </h2>
+        </motion.div>
+    );
+}
 
-                <div className="flex flex-col md:flex-row items-center gap-12">
+export { SectionHeader };
+
+export default function About() {
+    return (
+        <section id="about" className="relative">
+            <div className="max-w-7xl mx-auto px-6">
+                <SectionHeader code="SYS_01" label="ABOUT_MODULE" title="System Profile" />
+
+                <div className="mt-14 grid lg:grid-cols-[1fr_320px] gap-12 items-start">
+                    <div className="space-y-6">
+                        {aboutText.map((paragraph, i) => (
+                            <motion.p
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-80px" }}
+                                transition={{ duration: 0.6, delay: i * 0.15 }}
+                                className="text-ts leading-[1.85] text-[14px]"
+                            >
+                                {paragraph}
+                            </motion.p>
+                        ))}
+                    </div>
+
                     <motion.div
-                        initial={{ opacity: 0, x: -50 }}
+                        initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        className="w-full md:w-1/3 flex justify-center"
+                        viewport={{ once: true, margin: "-80px" }}
+                        transition={{ duration: 0.7, delay: 0.3 }}
+                        className="holo-card rounded-xl p-5 neon-border hidden lg:block"
                     >
-                        <div className="relative w-72 h-80 rounded-2xl overflow-hidden shadow-2xl border-2 border-primary/20 transform hover:scale-105 transition-transform duration-500">
-                            <img src="/images/profile2.jpg" alt="Profile" className="w-full h-full object-cover" onError={(e) => { e.target.src = 'https://ui-avatars.com/api/?name=Gowtham+C+K&background=random&color=fff&size=512' }} />
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        className="w-full md:w-2/3"
-                    >
-                        <h3 className="text-3xl font-bold mb-2">I'm {personalInfo.name}</h3>
-                        <span className="text-primary font-medium text-lg mb-6 block">{personalInfo.role}</span>
-
-                        <p className="text-slate-300 leading-relaxed mb-8 text-lg">
-                            {personalInfo.bio}
-                        </p>
-
-                        <div className="grid md:grid-cols-2 gap-6 mb-8">
-                            <div className="glass p-4 rounded-xl flex items-center space-x-4">
-                                <Mail className="text-primary" size={24} />
-                                <div>
-                                    <p className="text-xs text-slate-400">Email</p>
-                                    <p className="text-sm font-medium">{personalInfo.email}</p>
-                                </div>
+                        <div className="flex items-center gap-2 mb-5 pb-3 border-b border-surface-border">
+                            <div className="flex gap-1.5">
+                                <div className="w-2 h-2 rounded-full bg-red-500/60" />
+                                <div className="w-2 h-2 rounded-full bg-yellow-500/60" />
+                                <div className="w-2 h-2 rounded-full bg-green-500/60" />
                             </div>
-                            <div className="glass p-4 rounded-xl flex items-center space-x-4">
-                                <MapPin className="text-primary" size={24} />
-                                <div>
-                                    <p className="text-xs text-slate-400">Place</p>
-                                    <p className="text-sm font-medium">{personalInfo.place}</p>
-                                </div>
-                            </div>
+                            <span className="font-mono text-[9px] text-tm tracking-widest ml-2">
+                                SYSTEM_SPECS.terminal
+                            </span>
                         </div>
 
-                        <a href="#" className="inline-block px-8 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full font-bold transition-all">
-                            Resume
-                        </a>
+                        <div className="space-y-4">
+                            {systemSpecs.map((spec, i) => (
+                                <div key={i}>
+                                    <p className="font-mono text-[9px] text-accent/40 tracking-[0.2em]">
+                                        &gt; {spec.key}
+                                    </p>
+                                    <div className="flex items-center justify-between mt-1">
+                                        <p className="text-sm text-tp font-medium">{spec.value}</p>
+                                        <span className="font-mono text-[8px] text-accent/25 tracking-widest">
+                                            [{spec.code}]
+                                        </span>
+                                    </div>
+                                    {i < systemSpecs.length - 1 && (
+                                        <div className="mt-3 h-[1px] bg-surface-border" />
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+
+                        <div className="mt-5 pt-3 border-t border-surface-border">
+                            <p className="font-mono text-[8px] text-accent/20 tracking-widest terminal-cursor">
+                                STATUS: ALL_SYSTEMS_NOMINAL
+                            </p>
+                        </div>
                     </motion.div>
                 </div>
             </div>
         </section>
     );
-};
-
-export default About;
+}

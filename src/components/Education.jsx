@@ -1,38 +1,56 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { education } from '../data';
+import { SectionHeader } from './About';
 import { GraduationCap } from 'lucide-react';
 
-const Education = () => {
+export default function Education() {
     return (
-        <section id="education" className="py-20 bg-slate-900/50">
-            <div className="container mx-auto px-6">
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-4xl font-bold text-center mb-16"
-                >
-                    <GraduationCap className="inline-block mr-2 text-primary" /> My <span className="text-primary">Education</span>
-                </motion.h2>
+        <section id="education" className="relative">
+            <div className="max-w-7xl mx-auto px-6">
+                <SectionHeader code="SYS_02" label="EDUCATION_LOG" title="Academic Nodes" />
 
-                <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    {education.map((edu, index) => (
+                <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {education.map((edu, i) => (
                         <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            key={i}
+                            initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.2 }}
-                            className="glass overflow-hidden rounded-2xl group hover:border-primary/50 transition-colors"
+                            viewport={{ once: true, margin: "-60px" }}
+                            transition={{ duration: 0.6, delay: i * 0.15 }}
+                            whileHover={{ y: -4, transition: { duration: 0.3 } }}
+                            className="group holo-card rounded-2xl p-7 neon-border"
                         >
-                            <div className="h-48 overflow-hidden">
-                                <img src={edu.image} alt={edu.school} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500" onError={(e) => { e.target.src = 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' }} />
-                            </div>
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold mb-2 line-clamp-2">{edu.title}</h3>
-                                <p className="text-sm text-primary font-medium mb-1">{edu.school}</p>
-                                <p className="text-xs text-slate-400">{edu.year}</p>
+                            <div className="relative z-10">
+                                <div className="flex items-center justify-between mb-5">
+                                    <div className="w-11 h-11 border border-accent/20 rounded-xl flex items-center justify-center text-accent/60 group-hover:text-accent group-hover:border-accent/40 transition-all duration-500">
+                                        <GraduationCap size={18} strokeWidth={1.5} />
+                                    </div>
+                                    <span className={`font-mono text-[8px] px-2 py-0.5 rounded tracking-widest ${
+                                        edu.status === 'IN_PROGRESS' ? 'bg-accent/10 text-accent/60' : 'bg-green-500/10 text-green-500/60'
+                                    }`}>
+                                        {edu.status}
+                                    </span>
+                                </div>
+
+                                <h3 className="text-lg font-bold text-tp mb-1 group-hover:text-accent transition-colors duration-500">
+                                    {edu.institution}
+                                </h3>
+                                <p className="text-ts text-[13px] leading-relaxed mb-3">
+                                    {edu.degree}
+                                </p>
+
+                                <div className="flex items-center justify-between pt-3 border-t border-surface-border">
+                                    <span className="font-mono text-[10px] text-accent/40 tracking-widest">
+                                        {edu.period}
+                                    </span>
+                                    <span className="font-mono text-[10px] text-accent/60 tracking-widest font-semibold">
+                                        {edu.result}
+                                    </span>
+                                </div>
+
+                                <p className="font-mono text-[9px] text-tm tracking-widest mt-2">
+                                    {edu.location}
+                                </p>
                             </div>
                         </motion.div>
                     ))}
@@ -40,6 +58,4 @@ const Education = () => {
             </div>
         </section>
     );
-};
-
-export default Education;
+}
