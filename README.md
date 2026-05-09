@@ -1,42 +1,87 @@
-# 🚀 Gowtham C K
-**`NEURAL_ARCHITECT // DEEP_TECH_ENGINEER`**
+# Hi there, I'm Gowtham C K! 👋
 
-Tech Explorer & Software Engineer passionate about Deep Tech. ICCSSE Scholar @ RV University and ISE student @ PESCE. Focused on AI, Edge Computing, and Quantum Algorithms. Skilled in Full-Stack Architecture & Rapid Prototyping.
+### 👨‍💻 Software Engineer | AI & Full-Stack Developer | Blockchain Enthusiast
 
-![System Status](https://img.shields.io/badge/System_Status-ACTIVE-00FFD1?style=for-the-badge&color=0a0a0f&labelColor=0a0a0f)
-![Location](https://img.shields.io/badge/Location-Mysore_/_Bangalore-blue?style=for-the-badge&color=0a0a0f)
+I'm an Information Science Engineer passionate about building scalable web applications and AI solutions. I thrive on solving complex problems with **Python**, **Django**, and **Computer Vision**.
+
+- 🔭 I’m currently working on **Polygnan Learning Management System (LMS)**
+- 🌱 I’m currently learning **Oracle Cloud Infrastructure & Advanced RAG Pipelines**
+- 👯 I’m looking to collaborate on **Open Source AI & Blockchain Projects**
+- 💬 Ask me about **Django, React, Docker, and YOLO Object Detection**
+- 📫 How to reach me: **<ckgowtham12@gmail.com>**
+
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=GowthamCK&label=Profile%20Views&color=0e75b6&style=flat" alt="GowthamCK" />
+</p>
+
+---
+
+### 🛠 Tech Stack & Tools
+
+<p align="left">
+  <!-- Backend -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" />
+  
+  <!-- Frontend -->
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+
+  <!-- AI/ML -->
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+
+  <!-- Cloud & DevOps -->
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+</p>
 
 ---
 
-## 💻 Tech Stack
-- **Languages:** Python, Java, JavaScript, SQL, HTML5/CSS3
-- **Frameworks:** React, Django, Django Ninja
-- **AI & Deep Tech:** Deep Learning, YOLO, RAG, LLMs, Model Fine-Tuning, OpenCV
-- **Cloud & DevOps:** AWS, Oracle Cloud, Azure, GCP, Docker, Git, n8n, Jira
+### 📊 GitHub Analytics
 
-## 🔬 Experience
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=GowthamCK&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GowthamCK's GitHub stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GowthamCK&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
+</div>
 
-### Aerospace Dept, IISc Bangalore
-*Research / Project Intern (Oct 2024 – Jan 2025)*
-- Researched and developed real-time exercise tracking systems (Kreeda.ai) by fine-tuning YOLO nano architectures.
-- Accelerated model inference using CUDA, benchmarking latency metrics to ensure seamless web deployment.
-- Strategically augmented training datasets by 30% (6,000+ custom samples) to mitigate model overfitting and improve robust tracking.
+<br />
 
-### Polygnan Foundation
-*AI Intern & Fellow (Feb 2025 – Dec 2025)*
-- Architected a scalable LMS using Django Ninja & React with RBAC, supporting learning for 500+ concurrent users.
-- Engineered n8n automation workflows and RAG-based AI agents to optimize internal operations.
-- Orchestrated STEM programs for 150+ students; authored and deployed K-12 curricula for Robotics and Design Thinking.
-
-## 🏆 Achievements
-- **National MSME Hackathon 4.0 Winner:** Secured ₹15 Lakhs in project funding from the Ministry of MSME for a novel blockchain technology solution.
-- **Blockchain Patent Published:** Co-Inventor of "Blockchain-Enabled System for Carbon Capture Verification and Automated Emission Credit Trading".
-- **Excellent Student of the Chapter & Best Performer Award:** Recognized by ISTE-PESCE for outstanding technical contributions.
-
-## 🔗 Let's Connect
-- **Portfolio:** [gowthamck.github.io/GowthamCK](https://gowthamck.github.io/GowthamCK/)
-- **LinkedIn:** [linkedin.com/in/gowtham-c-k](https://www.linkedin.com/in/gowtham-c-k/)
-- **Email:** ckgowtham12@gmail.com
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=GowthamCK&theme=radical&hide_border=true" alt="GitHub Streak" width="98%" />
+</div>
 
 ---
-*“Engineering solutions that scale, serve, and sustain.”*
+
+### 🐍 Contribution Graph
+
+<!-- The snake animation will be generated by the GitHub Action -->
+<div align="center">
+  <img src="https://github.com/GowthamCK/GowthamCK/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" width="100%" />
+</div>
+
+---
+
+### 🚀 Featured Projects
+
+| Project | Stack | Description |
+| :--- | :--- | :--- |
+| **Polygnan LMS** | `Django` `React` `Docker` | Scalable LMS supporting 500+ users with RBAC and assessment engine. |
+| **Friend-or-Foe** | `Python` `YOLO` `OpenCV` | Real-time edge inference system for defense using Raspberry Pi. |
+
+---
+
+<div align="center">
+
+### 📫 Connect with Me
+
+<a href="https://www.linkedin.com/in/gowtham-c-k/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="gowtham-c-k" /></a>
+<a href="mailto:ckgowtham12@gmail.com" target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="ckgowtham12@gmail.com" /></a>
+<a href="https://gowthamck.github.io/" target="blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" /></a>
+
+</div>
