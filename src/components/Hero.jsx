@@ -24,8 +24,22 @@ export default function Hero() {
     return (
         <section ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
             {/* Background layers */}
+            {/* You can swap between these futuristic grids:
+                1. hex-grid (Original Honeycomb)
+                2. circuit-bg (Original Circuit Lines)
+                3. dot-matrix-bg (Retina LED Dots)
+                4. synthwave-grid (3D Perspective Floor)
+                5. blueprint-grid (Architectural Schematic)
+                6. radar-grid (Concentric Sonar Rings)
+                7. isometric-grid (Tactical Angled Map)
+                8. warp-grid (Animated Moving Hyperspace)
+                9. target-hud (Sniper Crosshair HUD)
+                10. hyper-grid-3d (High-Speed Infinite 3D Corridor)
+                11. matrix-wall-3d (Vertical 3D Data Walls)
+                12. portal-grid (Spinning 3D Stargate Floor)
+            */}
             <div className="absolute inset-0 hex-grid" />
-            <div className="absolute inset-0 circuit-bg" />
+            {/*<div className="absolute inset-0 dot-matrix-bg opacity-30" />*/}
 
             <motion.div style={{ y, opacity }} className="relative z-10 text-center max-w-5xl mx-auto px-6">
                 {/* System status line */}

@@ -215,26 +215,197 @@ section {
     box-shadow: none;
 }
 
-/* ── HEX GRID BACKGROUND ──────────────────────────── */
+/* ── BACKGROUND GRID OPTIONS ───────────────────────── */
+
+/* 1. Hex Grid (Animated Energy Wave) */
 .hex-grid {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='40' viewBox='0 0 60 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 15L60 25L30 40L0 25L0 15Z' fill='none' stroke='%2300FFD1' stroke-opacity='0.03' stroke-width='0.5'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='40' viewBox='0 0 60 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 15L60 25L30 40L0 25L0 15Z' fill='none' stroke='%2300FFD1' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
     background-size: 60px 40px;
-    opacity: var(--glow-opacity);
-    transition: opacity 0.5s ease;
+    opacity: 1;
 }
 
-/* ── CIRCUIT BOARD PATTERN ─────────────────────────── */
+.hex-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='40' viewBox='0 0 60 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 15L60 25L30 40L0 25L0 15Z' fill='none' stroke='%2300FFD1' stroke-opacity='0.2' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-size: 60px 40px;
+    mask-image: linear-gradient(to right, transparent, black 50%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 50%, transparent);
+    mask-size: 60vw 100vh;
+    -webkit-mask-size: 60vw 100vh;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    animation: hex-wave 5s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes hex-wave {
+    0% { mask-position: -60vw 0; -webkit-mask-position: -60vw 0; }
+    100% { mask-position: 100vw 0; -webkit-mask-position: 100vw 0; }
+}
+
+/* 2. Circuit Board Pattern (Original) */
 .circuit-bg::after {
     content: '';
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgb(var(--accent) / 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgb(var(--accent) / 0.03) 1px, transparent 1px);
+        linear-gradient(rgb(var(--accent) / 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.05) 1px, transparent 1px);
     background-size: 40px 40px;
     pointer-events: none;
-    opacity: var(--glow-opacity);
+    opacity: 1;
     transition: opacity 0.5s ease;
+}
+
+/* 3. Dot Matrix / Retina Grid (High Tech) */
+.dot-matrix-bg {
+    background-image: radial-gradient(rgb(var(--accent) / 0.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 1;
+}
+
+/* 4. Synthwave Perspective Grid (3D Hologram Floor) */
+.synthwave-grid {
+    position: absolute;
+    inset: -50%;
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.15) 1px, transparent 1px);
+    background-size: 50px 50px;
+    transform: perspective(600px) rotateX(60deg) translateY(-100px);
+    transform-origin: top;
+    opacity: 0.6;
+    mask-image: linear-gradient(to bottom, transparent 10%, black 70%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 10%, black 70%);
+}
+
+/* 5. Schematic Blueprint Grid */
+.blueprint-grid {
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.08) 1px, transparent 1px),
+        linear-gradient(rgb(var(--accent) / 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.02) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+/* 6. Radar Scan Grid (Concentric Circles + Crosshairs) */
+.radar-grid {
+    background-image: 
+        radial-gradient(circle at center, transparent 49%, rgb(var(--accent) / 0.1) 50%, transparent 51%),
+        radial-gradient(circle at center, transparent 49%, rgb(var(--accent) / 0.1) 50%, transparent 51%),
+        radial-gradient(circle at center, transparent 49%, rgb(var(--accent) / 0.05) 50%, transparent 51%),
+        linear-gradient(to right, transparent 49.8%, rgb(var(--accent) / 0.15) 50%, transparent 50.2%),
+        linear-gradient(to bottom, transparent 49.8%, rgb(var(--accent) / 0.15) 50%, transparent 50.2%);
+    background-size: 150px 150px, 300px 300px, 450px 450px, 100% 100%, 100% 100%;
+    background-position: center;
+    opacity: 1;
+}
+
+/* 7. Isometric Tactical Grid (3D Angled) */
+.isometric-grid {
+    position: absolute;
+    inset: -50%;
+    background-image: 
+        linear-gradient(30deg, rgb(var(--accent) / 0.1) 1px, transparent 1px),
+        linear-gradient(150deg, rgb(var(--accent) / 0.1) 1px, transparent 1px);
+    background-size: 40px 69.28px;
+    background-position: center;
+    opacity: 1;
+}
+
+/* 8. Animated Warp Grid (Moving Hyperspace Floor) */
+.warp-grid {
+    position: absolute;
+    inset: -100%;
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.2) 1px, transparent 1px);
+    background-size: 80px 80px;
+    transform: perspective(400px) rotateX(65deg);
+    transform-origin: center top;
+    animation: warp 5s linear infinite;
+    mask-image: radial-gradient(circle at center, black 10%, transparent 60%);
+    -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 60%);
+}
+@keyframes warp {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 80px; }
+}
+
+/* 9. Target HUD Grid (Crosshairs with inverted center) */
+.target-hud {
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(circle at center, transparent 15%, black 80%);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 15%, black 80%);
+}
+.target-hud::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(to right, transparent 49.9%, rgb(var(--accent) / 0.3) 50%, transparent 50.1%),
+        linear-gradient(to bottom, transparent 49.9%, rgb(var(--accent) / 0.3) 50%, transparent 50.1%);
+}
+
+/* 10. Hyper-Grid Corridor (3D Floor and Ceiling) */
+.hyper-grid-3d {
+    position: absolute;
+    inset: -100%;
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.25) 1px, transparent 1px);
+    background-size: 80px 80px;
+    transform: perspective(300px) rotateX(85deg);
+    animation: hyper-warp 1.5s linear infinite;
+    mask-image: radial-gradient(circle at center, transparent 5%, black 60%);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 5%, black 60%);
+}
+@keyframes hyper-warp {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 80px; }
+}
+
+/* 11. Matrix Wall 3D (Vertical Walls scrolling past) */
+.matrix-wall-3d {
+    position: absolute;
+    inset: -50%;
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.2) 1px, transparent 1px);
+    background-size: 60px 60px;
+    transform: perspective(400px) rotateY(75deg);
+    animation: wall-warp 2s linear infinite;
+    mask-image: radial-gradient(circle at center, black 10%, transparent 60%);
+    -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 60%);
+}
+@keyframes wall-warp {
+    0% { background-position: 0 0; }
+    100% { background-position: 60px 0; }
+}
+
+/* 12. Portal Grid (Spinning 3D Stargate) */
+.portal-grid {
+    position: absolute;
+    inset: -100%;
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.15) 1px, transparent 1px);
+    background-size: 80px 80px;
+    transform: perspective(500px) rotateX(60deg);
+    animation: portal-spin 20s linear infinite;
+    mask-image: radial-gradient(circle at center, transparent 10%, black 60%);
+    -webkit-mask-image: radial-gradient(circle at center, transparent 10%, black 60%);
+}
+@keyframes portal-spin {
+    0% { transform: perspective(500px) rotateX(60deg) rotateZ(0deg); }
+    100% { transform: perspective(500px) rotateX(60deg) rotateZ(360deg); }
 }
 
 /* ── NOISE TEXTURE OVERLAY ─────────────────────────── */
@@ -244,7 +415,7 @@ section {
     inset: 0;
     z-index: 98;
     pointer-events: none;
-    opacity: calc(0.015 * var(--glow-opacity));
+    opacity: 0.03;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 200px 200px;
@@ -258,5 +429,47 @@ section {
 }
 
 [data-theme="light"] .hex-grid {
-    opacity: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='40' viewBox='0 0 60 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 15L60 25L30 40L0 25L0 15Z' fill='none' stroke='%230F172A' stroke-opacity='0.05' stroke-width='1'/%3E%3C/svg%3E");
+    opacity: 1;
+}
+
+[data-theme="light"] .hex-grid::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='40' viewBox='0 0 60 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 15L60 25L30 40L0 25L0 15Z' fill='none' stroke='%230F172A' stroke-opacity='0.2' stroke-width='1.5'/%3E%3C/svg%3E");
+}
+
+/* ── LIGHT MODE TEXTURE OPTIONS ──────────────────────── */
+/* You can copy the 'background-image' from any of these and paste it into the .holo-card rule below! */
+
+.texture-mesh {
+    /* Fine Technical Grid */
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.04) 1px, transparent 1px);
+    background-size: 8px 8px;
+}
+
+.texture-dots {
+    /* Premium Minimalist Dots */
+    background-image: radial-gradient(rgb(var(--accent) / 0.06) 1px, transparent 1px);
+    background-size: 12px 12px;
+}
+
+.texture-hatch {
+    /* Diagonal Carbon/Hatch (Currently Active on Cards) */
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgb(var(--accent) / 0.02),
+        rgb(var(--accent) / 0.02) 1px,
+        transparent 1px,
+        transparent 8px
+    );
+}
+
+/* Apply texture to all boxes in Light Mode */
+[data-theme="light"] .holo-card {
+    background-color: var(--card-bg);
+    background-image: 
+        linear-gradient(rgb(var(--accent) / 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(var(--accent) / 0.04) 1px, transparent 1px);
+    background-size: 8px 8px;
 }
