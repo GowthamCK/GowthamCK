@@ -15,9 +15,9 @@ export const personalInfo = {
 };
 
 export const aboutText = [
-    "I'm Gowtham — an Information Science Engineer with deep roots in AI, systems architecture, and emerging technologies. My academic journey through RV University & PESCE shaped a relentless curiosity for building things that matter.",
-    "I believe in tech-for-good — engineering solutions that scale, serve, and sustain. From fine-tuning vision models for edge deployment to architecting full-stack platforms that power education, I work at the intersection of research and production.",
-    "With a foundation spanning AI research at IISc Bangalore to building scalable platforms at Polygnan Foundation, I bring disciplined execution and creative problem-solving to every system I architect."
+    "[ PROFILE: GOWTHAM | IS ENGINEER ]",
+    "I engineer scalable, tech-for-good solutions at the intersection of AI research and production.",
+    "From fine-tuning edge vision models at IISc Bangalore to architecting full-stack platforms at Polygnan Foundation, I bring disciplined execution and relentless curiosity to building systems that matter."
 ];
 
 export const systemSpecs = [

@@ -38,8 +38,8 @@ export default function Hero() {
                 11. matrix-wall-3d (Vertical 3D Data Walls)
                 12. portal-grid (Spinning 3D Stargate Floor)
             */}
-            <div className="absolute inset-0 hex-grid" />
-            {/*<div className="absolute inset-0 dot-matrix-bg opacity-30" />*/}
+            <motion.div style={{ opacity }} className="absolute inset-0 hex-grid" />
+            {/*<motion.div style={{ opacity }} className="absolute inset-0 dot-matrix-bg opacity-30" />*/}
 
             <motion.div style={{ y, opacity }} className="relative z-10 text-center max-w-5xl mx-auto px-6">
                 {/* System status line */}
