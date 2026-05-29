@@ -82,6 +82,6 @@ I'm an Information Science Engineer passionate about building scalable web appli
 
 <a href="https://www.linkedin.com/in/gowtham-c-k/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="gowtham-c-k" /></a>
 <a href="mailto:ckgowtham12@gmail.com" target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="ckgowtham12@gmail.com" /></a>
-<a href="https://gowthamck.github.io/" target="blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" /></a>
+<a href="[https://gowthamck.github.io/](https://gowthamck.github.io/GowthamCK/)" target="blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" /></a>
 
 </div>
