@@ -4,8 +4,6 @@
 
 I'm an Information Science Engineer passionate about building scalable web applications and AI solutions. I thrive on solving complex problems with **Python**, **Django**, and **Computer Vision**.
 
-- 🔭 I’m currently working on **Polygnan Learning Management System (LMS)**
-- 🌱 I’m currently learning **Oracle Cloud Infrastructure & Advanced RAG Pipelines**
 - 👯 I’m looking to collaborate on **Open Source AI & Blockchain Projects**
 - 💬 Ask me about **Django, React, Docker, and YOLO Object Detection**
 - 📫 How to reach me: **<ckgowtham12@gmail.com>**
