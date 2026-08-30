@@ -4,6 +4,8 @@
 
 I'm an Information Science Engineer passionate about building scalable web applications and AI solutions. I thrive on solving complex problems with **Python**, **Django**, and **Computer Vision**.
 
+- 🔭 I’m currently working on **Blockchain Carbon Verification & Emission Credit Trading (MSME Funded)**
+- 🌱 I’m currently learning **Oracle Cloud Infrastructure & Advanced RAG Pipelines**
 - 👯 I’m looking to collaborate on **Open Source AI & Blockchain Projects**
 - 💬 Ask me about **Django, React, Docker, and YOLO Object Detection**
 - 📫 How to reach me: **<ckgowtham12@gmail.com>**
@@ -69,7 +71,7 @@ I'm an Information Science Engineer passionate about building scalable web appli
 
 | Project | Stack | Description |
 | :--- | :--- | :--- |
-| **Polygnan LMS** | `Django` `React` `Docker` | Scalable LMS supporting 500+ users with RBAC and assessment engine. |
+| **Carbon Credit Trading System** | `Blockchain` `Smart Contracts` `Python` `IoT` | Ministry of MSME funded (₹15L grant) decentralized system for carbon capture verification & automated emission credit trading. |
 | **Friend-or-Foe** | `Python` `YOLO` `OpenCV` | Real-time edge inference system for defense using Raspberry Pi. |
 
 ---
@@ -79,6 +81,7 @@ I'm an Information Science Engineer passionate about building scalable web appli
 ### 📫 Connect with Me
 
 <a href="https://www.linkedin.com/in/gowtham-c-k/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="gowtham-c-k" /></a>
+<a href="https://www.credly.com/users/gowtham-c-k/badges/credly" target="blank"><img src="https://img.shields.io/badge/Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" /></a>
 <a href="mailto:ckgowtham12@gmail.com" target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="ckgowtham12@gmail.com" /></a>
 <a href="https://gowthamck.github.io/GowthamCK/" target="blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" /></a>
 
