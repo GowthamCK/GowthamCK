@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Globe } from 'lucide-react';
+import { Github, Linkedin, Mail, Globe, Award } from 'lucide-react';
 
 export const personalInfo = {
     name: "Gowtham C K",
@@ -9,6 +9,7 @@ export const personalInfo = {
     socials: [
         { name: "GitHub", url: "https://github.com/GowthamCK", icon: Github, label: "git_hub" },
         { name: "LinkedIn", url: "https://www.linkedin.com/in/gowtham-c-k/", icon: Linkedin, label: "linked_in" },
+        { name: "Credly", url: "https://www.credly.com/users/gowtham-c-k/badges/credly", icon: Award, label: "credly_profile" },
         { name: "g.dev", url: "https://g.dev/gowthamck", icon: Globe, label: "g_dev" },
         { name: "Email", url: "mailto:ckgowtham12@gmail.com", icon: Mail, label: "e_mail" },
     ]
@@ -154,14 +155,8 @@ export const achievements = [
 ];
 
 export const certifications = [
-    { name: "Oracle AI Vector Search Certified Professional", code: "1Z0-184-25" },
-    { name: "OCI 2025 AI Foundations Associate", code: "1Z0-1122-25" },
-    { name: "OCI 2025 Foundations Associate", code: "1Z0-1085-25" },
-    { name: "AWS Academy Cloud Foundations & Architecting", code: "AWS_CLD" },
     { name: "Google Cloud Computing Foundations", code: "GCP_FND" },
     { name: "Azure AI Vision Solution", code: "AZ_VIS" },
-    { name: "Agile Software Development", code: "AGILE" },
-    { name: "Quantum Computing for Beginners", code: "QC_101" },
     { name: "DevOps Training (HCL)", code: "HCL_DVO" },
 ];
 
