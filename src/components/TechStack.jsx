@@ -12,7 +12,7 @@ const categoryColors = {
 export default function TechStack() {
     return (
         <section id="stack" className="relative">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionHeader code="SYS_09" label="TECH_ARSENAL" title="Neural Toolkit" />
 
                 <motion.div
@@ -20,7 +20,7 @@ export default function TechStack() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mt-8 flex flex-wrap gap-4"
+                    className="mt-6 sm:mt-8 flex flex-wrap gap-3 sm:gap-4"
                 >
                     {Object.entries({ core: 'CORE', ai: 'AI/ML', cloud: 'CLOUD', devops: 'DEVOPS' }).map(([key, label]) => (
                         <span key={key} className="flex items-center gap-2">
@@ -40,7 +40,7 @@ export default function TechStack() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
                     transition={{ duration: 0.7, delay: 0.3 }}
-                    className="mt-8 flex flex-wrap gap-3"
+                    className="mt-6 sm:mt-8 flex flex-wrap gap-2 sm:gap-3"
                 >
                     {techStack.map((tech, i) => (
                         <motion.span
@@ -50,7 +50,7 @@ export default function TechStack() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: i * 0.03 }}
                             whileHover={{ scale: 1.08, transition: { duration: 0.2 } }}
-                            className={`font-mono text-[12px] text-ts border rounded-full px-5 py-2.5 transition-all duration-300 cursor-default ${categoryColors[tech.category]}`}
+                            className={`font-mono text-[11px] sm:text-[12px] text-ts border rounded-full px-3.5 sm:px-5 py-1.5 sm:py-2.5 transition-all duration-300 cursor-default ${categoryColors[tech.category]}`}
                         >
                             {tech.name}
                         </motion.span>

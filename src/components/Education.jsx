@@ -6,10 +6,10 @@ import { GraduationCap } from 'lucide-react';
 export default function Education() {
     return (
         <section id="education" className="relative">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionHeader code="SYS_02" label="EDUCATION_LOG" title="Academic Nodes" />
 
-                <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="mt-8 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
                     {education.map((edu, i) => (
                         <motion.div
                             key={i}
@@ -18,7 +18,7 @@ export default function Education() {
                             viewport={{ once: true, margin: "-60px" }}
                             transition={{ duration: 0.6, delay: i * 0.15 }}
                             whileHover={{ y: -4, transition: { duration: 0.3 } }}
-                            className="group holo-card rounded-2xl p-7 neon-border"
+                            className="group holo-card rounded-2xl p-5 sm:p-7 neon-border"
                         >
                             <div className="relative z-10">
                                 <div className="flex items-center justify-between mb-5">

@@ -9,14 +9,14 @@ function SectionHeader({ code, label, title }) {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-            <div className="flex items-center gap-3 mb-4">
-                <div className="w-1.5 h-1.5 bg-accent rounded-full" />
-                <span className="font-mono text-[10px] text-accent/50 tracking-[0.3em]">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+                <div className="w-1.5 h-1.5 bg-accent rounded-full shrink-0" />
+                <span className="font-mono text-[9px] sm:text-[10px] text-accent/50 tracking-[0.2em] sm:tracking-[0.3em] uppercase">
                     {code} // {label}
                 </span>
-                <div className="h-[1px] flex-1 bg-surface-border max-w-[100px]" />
+                <div className="h-[1px] flex-1 bg-surface-border max-w-[60px] sm:max-w-[100px]" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-tp tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-tp tracking-tight">
                 {title}
             </h2>
         </motion.div>
@@ -28,11 +28,11 @@ export { SectionHeader };
 export default function About() {
     return (
         <section id="about" className="relative">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionHeader code="SYS_01" label="ABOUT_MODULE" title="System Profile" />
 
-                <div className="mt-14 grid lg:grid-cols-[1fr_320px] gap-12 items-start">
-                    <div className="space-y-6">
+                <div className="mt-8 sm:mt-14 grid lg:grid-cols-[1fr_320px] gap-8 lg:gap-12 items-start">
+                    <div className="space-y-5 sm:space-y-6">
                         {aboutText.map((paragraph, i) => (
                             <motion.p
                                 key={i}
@@ -40,7 +40,7 @@ export default function About() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-80px" }}
                                 transition={{ duration: 0.6, delay: i * 0.15 }}
-                                className="text-ts leading-[1.85] text-[14px]"
+                                className="text-ts leading-[1.8] sm:leading-[1.85] text-[13px] sm:text-[14px]"
                             >
                                 {paragraph}
                             </motion.p>
@@ -52,7 +52,7 @@ export default function About() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true, margin: "-80px" }}
                         transition={{ duration: 0.7, delay: 0.3 }}
-                        className="holo-card rounded-xl p-5 neon-border hidden lg:block"
+                        className="holo-card rounded-xl p-5 neon-border block mt-4 lg:mt-0"
                     >
                         <div className="flex items-center gap-2 mb-5 pb-3 border-b border-surface-border">
                             <div className="flex gap-1.5">

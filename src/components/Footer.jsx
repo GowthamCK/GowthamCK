@@ -20,6 +20,8 @@ export default function Footer() {
                                 href={social.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                title={social.name}
+                                aria-label={social.name}
                                 className="text-tm hover:text-accent transition-colors duration-300"
                             >
                                 <social.icon size={16} strokeWidth={1.5} />
