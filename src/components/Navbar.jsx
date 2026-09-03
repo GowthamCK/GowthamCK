@@ -12,6 +12,7 @@ const navLinks = [
     { label: "CERTS", href: "#certifications", code: "06" },
     { label: "STACK", href: "#stack", code: "07" },
     { label: "LEADERSHIP", href: "#leadership", code: "08" },
+    { label: "TERMINAL", href: "#terminal", code: "09" },
 ];
 
 export default function Navbar() {
@@ -111,9 +112,9 @@ export default function Navbar() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed inset-0 z-40 bg-surface/98 backdrop-blur-2xl flex flex-col items-center justify-center gap-5 lg:hidden"
+                        className="fixed inset-0 z-40 bg-surface/98 backdrop-blur-2xl flex flex-col items-center justify-start overflow-y-auto pt-24 pb-12 px-6 gap-5 lg:hidden"
                     >
-                        <div className="absolute top-6 left-6 font-mono text-[10px] text-accent/40">
+                        <div className="font-mono text-[10px] text-accent/40 mb-2">
                             NAVIGATION_MATRIX
                         </div>
                         {navLinks.map((link, i) => (
