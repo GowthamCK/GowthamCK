@@ -12,6 +12,7 @@ import Achievements from './components/Achievements';
 import Certifications from './components/Certifications';
 import TechStack from './components/TechStack';
 import Leadership from './components/Leadership';
+import ChatTerminal from './components/ChatTerminal';
 import Footer from './components/Footer';
 
 function BootScreen({ onComplete }) {
@@ -96,7 +97,7 @@ function App() {
                 {!booting && (
                     <>
                         <ParticleCanvas />
-                        <div className="relative z-10">
+                        <div className="relative z-10 space-y-20 sm:space-y-28 md:space-y-36">
                             <Navbar />
                             <Hero />
                             <About />
@@ -107,6 +108,7 @@ function App() {
                             <Certifications />
                             <TechStack />
                             <Leadership />
+                            <ChatTerminal />
                             <Footer />
                         </div>
                     </>
