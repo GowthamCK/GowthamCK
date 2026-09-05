@@ -1,14 +1,15 @@
 # Hi there, I'm Gowtham C K! 👋
 
-### 👨‍💻 Software Engineer | AI & Full-Stack Developer | Blockchain Enthusiast
+### 👨‍💻 Software Engineer & Applied AI Researcher
 
-I'm an Information Science Engineer passionate about building scalable web applications and AI solutions. I thrive on solving complex problems with **Python**, **Django**, and **Computer Vision**.
+I architect hybrid Web2/Web3 enterprise systems and conduct applied research in **Edge AI**, **Computer Vision**, and **AI-Assisted Software Engineering**. I specialize in engineering deterministic guardrails for autonomous LLM agents and deploying low-latency deep learning models on resource-constrained hardware.
 
-- 🔭 I’m currently working on **Blockchain Carbon Verification & Emission Credit Trading (MSME Funded)**
-- 🌱 I’m currently learning **Oracle Cloud Infrastructure & Advanced RAG Pipelines**
-- 👯 I’m looking to collaborate on **Open Source AI & Blockchain Projects**
-- 💬 Ask me about **Django, React, Docker, and YOLO Object Detection**
-- 📫 How to reach me: **<ckgowtham12@gmail.com>**
+- 🏆 **₹15 Lakh Central Grant Winner**: Project Lead & Lead Architect for MoMSME-funded Blockchain Traceability SaaS.
+- 🔬 **Applied Research**: IISc Bangalore (Computer Vision & YOLO accuracy-latency edge benchmarking).
+- 📜 **Co-Inventor**: Published Patent in Blockchain-Enabled Carbon Capture & Tokenization.
+- 🛡️ **13 Verified Badges**: Oracle Certified DevOps Professional, AWS Academy Cloud Architect, Google Certified.
+- 🤖 **Interactive Portfolio Bot**: Built-in Neural CLI grounded strictly on my verified profile.
+- 📫 Connect: **[ckgowtham12@gmail.com](mailto:ckgowtham12@gmail.com)** | **[Live Portfolio](https://gowthamck.github.io/GowthamCK/)**
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=GowthamCK&label=Profile%20Views&color=0e75b6&style=flat" alt="GowthamCK" />
@@ -16,28 +17,28 @@ I'm an Information Science Engineer passionate about building scalable web appli
 
 ---
 
-### 🛠 Tech Stack & Tools
+### 🛠 Core Technical Matrix & Arsenal
 
 <p align="left">
-  <!-- Backend -->
+  <!-- AI / ML & Edge -->
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/YOLO11s-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white" />
+  <img src="https://img.shields.io/badge/RAG_&_LLM_Agents-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" />
+  
+  <!-- Backend & Systems -->
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+  <img src="https://img.shields.io/badge/Django_Ninja-092E20?style=for-the-badge&logo=django&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" />
-  
-  <!-- Frontend -->
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
-
-  <!-- AI/ML -->
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=yolo&logoColor=black" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 
   <!-- Cloud & DevOps -->
+  <img src="https://img.shields.io/badge/Oracle_Cloud_OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux_Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
@@ -67,12 +68,14 @@ I'm an Information Science Engineer passionate about building scalable web appli
 
 ---
 
-### 🚀 Featured Projects
+### 🚀 Featured Engineering & Research Projects
 
-| Project | Stack | Description |
+| Project | Stack | Abstract & Impact |
 | :--- | :--- | :--- |
-| **Carbon Credit Trading System** | `Blockchain` `Smart Contracts` `Python` `IoT` | Ministry of MSME funded (₹15L grant) decentralized system for carbon capture verification & automated emission credit trading. |
-| **Friend-or-Foe** | `Python` `YOLO` `OpenCV` | Real-time edge inference system for defense using Raspberry Pi. |
+| **Enterprise Blockchain Supply Chain & AI Governance** | `Blockchain` `Python` `Claude/Cursor Governance` `Smart Contracts` | **MoMSME Funded (₹15L grant)**: Enterprise hybrid Web2/Web3 SaaS with deterministic prompt guardrails for autonomous AI development tools, preventing structural hallucinations. |
+| **Friend-or-Foe Edge Vision System** | `Python` `YOLO11s` `ONNX Runtime` `OpenCV` `Edge AI` | High-precision edge computer vision pipeline for real-time detection on resource-constrained embedded nodes. |
+| **AutoTranslate Multi-Agent Engine** | `Python` `TypeScript` `AST Parsing` `LLM Pipeline` | Automated source-to-source code migration framework utilizing deterministic AST validation and LLM multi-agent translation loops. |
+| **Neural Interactive Portfolio Bot** | `React` `Tailwind CSS` `Framer Motion` `Edge Search` | Low-latency terminal and conversational bot embedded directly into GitHub Pages, answering queries with deterministic verification. |
 
 ---
 
@@ -82,7 +85,8 @@ I'm an Information Science Engineer passionate about building scalable web appli
 
 <a href="https://www.linkedin.com/in/gowtham-c-k/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="gowtham-c-k" /></a>
 <a href="https://www.credly.com/users/gowtham-c-k/badges/credly" target="blank"><img src="https://img.shields.io/badge/Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white" alt="Credly" /></a>
+<a href="https://g.dev/gowthamck" target="blank"><img src="https://img.shields.io/badge/Google_Developer-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Developer" /></a>
 <a href="mailto:ckgowtham12@gmail.com" target="blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="ckgowtham12@gmail.com" /></a>
-<a href="https://gowthamck.github.io/GowthamCK/" target="blank"><img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio" /></a>
+<a href="https://gowthamck.github.io/GowthamCK/" target="blank"><img src="https://img.shields.io/badge/Live_Portfolio-00FFD1?style=for-the-badge&logo=firefox&logoColor=black" alt="Portfolio" /></a>
 
 </div>
