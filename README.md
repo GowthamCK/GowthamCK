@@ -44,14 +44,14 @@ I architect hybrid Web2/Web3 enterprise systems and conduct applied research in 
 ### 📊 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=GowthamCK&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GowthamCK's GitHub stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GowthamCK&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://github-stats-extended.vercel.app/api?username=GowthamCK&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GowthamCK's GitHub stats" width="48%" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=GowthamCK&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
 </div>
 
 <br />
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=GowthamCK&theme=radical&hide_border=true" alt="GitHub Streak" width="98%" />
+  <img src="https://streak-stats.demolab.com/?user=GowthamCK&theme=radical&hide_border=true" alt="GitHub Streak" width="98%" />
 </div>
 
 ---
