@@ -108,9 +108,8 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
         if (q.includes('polygnan') || q.includes('lms') || q.includes('cortex') || q.includes('stem') || q.includes('robotics')) {
             return {
                 text: `🏢 POLYGNAN FOUNDATION EXPERIENCE:
-• AI Intern (Nov 2025 – Dec 2025): Architected a scalable LMS using Django Ninja & React with strict Role-Based Access Control (RBAC) for 500+ active users. Built multi-agent n8n workflows and RAG-based AI agents for internal retrieval and guidance.
-• Fellow (Apr 2025 – Nov 2025): Directed 4 STEM programs for 150+ students; authored K-12 curricula for Robotics & Design Thinking.
-• Engineering Intern (Feb 2025 – Mar 2025): Led web development research for the foundation's digital modernization.`
+• AI Intern (Nov 2025 – Dec 2025): Architected scalable LMS (Django Ninja/React) with RBAC for 500+ active users. Engineered multi-agent n8n workflows, RAG agents, and product analytics pipelines.
+• Fellow & Engineering Intern (Feb 2025 – Nov 2025): Orchestrated 4 STEM programs for 150+ students, authored Robotics/IoT curricula, and collaborated with founders on B2B zero-to-one SaaS growth strategies.`
             };
         }
 
@@ -167,12 +166,12 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
         if (q === 'exp' || q === 'experience' || q.includes('intern') || q.includes('career') || q.includes('work') || q.includes('jobs') || q.includes('phd') || q.includes('fellowship')) {
             return {
                 text: `💼 PROFESSIONAL EXPERIENCE & RESEARCH HORIZONS:
-1. Polygnan Foundation (Bangalore) — AI Intern, Fellow & Engineering Intern (Feb 2025 – Dec 2025)
-   • Built scalable LMS (Django Ninja/React) for 500+ users and automated n8n RAG agent workflows.
-2. IISc Bangalore (Aerospace Dept) — Research Intern (Oct 2024 – Jan 2025)
-   • Conducted applied research in real-time edge vision (Kreeda.ai), fine-tuning YOLO nano with CUDA acceleration.
+1. Polygnan Foundation — AI Intern (Nov 2025 – Dec 2025) & Fellow / Engineering Intern (Feb 2025 – Nov 2025)
+   • Built scalable LMS, multi-agent n8n & RAG workflows, STEM curricula, and zero-to-one SaaS market teardowns.
+2. IISc Bangalore — Research Intern (Oct 2024 – Jan 2025)
+   • Applied R&D on real-time computer vision (PyTorch/CUDA), dataset expansion, and Edge AI latency tradeoffs.
 3. Future Focus:
-   • Seeking applied research fellowships and PhD opportunities in autonomous multi-agent systems, AI reliability, and large-scale architectural innovation.`
+   • Seeking applied research fellowships and PhD opportunities in Edge AI, multi-agent systems, and scalable architecture.`
             };
         }
 

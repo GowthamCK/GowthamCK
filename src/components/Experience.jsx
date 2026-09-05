@@ -37,13 +37,11 @@ export default function Experience() {
                                         </span>
                                     </div>
 
-                                    <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl font-extrabold text-tp">
-                                        {exp.role}
+                                    <h3 className="mt-2 sm:mt-3 text-lg sm:text-xl font-extrabold text-tp flex flex-wrap items-baseline gap-2">
+                                        <span>{exp.role}</span>
+                                        <span className="text-accent/80 font-mono text-xs sm:text-sm font-medium">| {exp.company}</span>
                                     </h3>
-                                    <p className="text-accent/80 text-xs sm:text-sm font-mono mt-1 tracking-wide font-medium">
-                                        @ {exp.company}
-                                    </p>
-                                    <p className="font-mono text-[8.5px] sm:text-[9.5px] text-tm tracking-widest mt-0.5">
+                                    <p className="font-mono text-[8.5px] sm:text-[9.5px] text-tm tracking-widest mt-1">
                                         {exp.location}
                                     </p>
 
@@ -68,6 +66,18 @@ export default function Experience() {
                             END_OF_LOG
                         </span>
                     </div>
+
+                    {/* SEO & ATS Competencies Registry */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="mt-10 sm:mt-12 p-4 sm:p-5 rounded-2xl border border-surface-border/80 bg-surface-raised/50 font-mono text-[11px] sm:text-xs text-ts/80 leading-relaxed backdrop-blur-md"
+                    >
+                        <span className="text-accent font-bold tracking-wider mr-2">&gt; Tech Stack &amp; Core Competencies:</span>
+                        <span className="text-tp/90">Python, C++, CUDA, PyTorch, YOLO11s, OpenCV, Next.js, React, Django, PostgreSQL, Cloud-Native Architecture, ROS2 Concepts, LLM Agents, RAG, Edge AI Deployment.</span>
+                    </motion.div>
                 </div>
             </div>
         </section>

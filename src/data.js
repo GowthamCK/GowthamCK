@@ -56,43 +56,35 @@ export const experience = [
         location: "Bangalore, India",
         status: "COMPLETED",
         points: [
-            "Architected a scalable LMS using Django Ninja & React with RBAC, supporting learning for 500+ concurrent users.",
-            "Engineered n8n automation workflows and RAG-based AI agents to optimize internal operations and user guidance."
+            "Architected a scalable Learning Management System (LMS) using Django Ninja and React with strict Role-Based Access Control (RBAC), supporting 500+ active users.",
+            "Engineered multi-agent n8n automation workflows and RAG-based AI agents to optimize internal data retrieval, operations, and user guidance.",
+            "Deployed deterministic AI governance guardrails to ensure reliable, context-aware, and secure responses from Large Language Models (LLMs).",
+            "Integrated advanced product analytics pipelines to track user engagement metrics and optimize educational delivery."
         ]
     },
     {
-        role: "Fellow (Part-time)",
+        role: "Fellow & Engineering Intern",
         company: "Polygnan Foundation",
-        period: "Apr 2025 – Nov 2025",
+        period: "Feb 2025 – Nov 2025",
         location: "Bangalore, India",
         status: "COMPLETED",
         points: [
-            "Orchestrated 4 STEM programs for 150+ students; authored and deployed K-12 curricula for Robotics and Design Thinking.",
-            "Mentored undergraduate students in building IoT and innovation modules, bridging the gap between theory and practice."
+            "Orchestrated 4 STEM programs for 150+ students, authoring comprehensive K-12 curricula focused on Robotics, IoT, and hardware design.",
+            "Mentored undergraduates in building modular IoT systems, successfully bridging theoretical kinematics with practical hardware assembly and programming.",
+            "Collaborated directly with founders on B2B zero-to-one SaaS growth strategies, conducting competitive market teardowns for enterprise digitalization."
         ]
     },
     {
-        role: "Engineering Intern",
-        company: "Polygnan Foundation",
-        period: "Feb 2025 – Mar 2025",
-        location: "Bangalore, India",
-        status: "COMPLETED",
-        points: [
-            "Contributed to strategic brainstorming and initial web development research for the foundation's digitalization.",
-            "Collaborated on educational initiatives, gaining deep insights into startup culture and service-minded leadership."
-        ]
-    },
-    {
-        role: "Research / Project Intern",
-        company: "Aerospace Dept, IISc Bangalore",
+        role: "Research Intern (Computer Vision)",
+        company: "IISc Bangalore",
         period: "Oct 2024 – Jan 2025",
         location: "Bangalore, India",
         status: "COMPLETED",
         points: [
-            "Researched and developed real-time exercise tracking systems (Kreeda.ai) by fine-tuning YOLO nano architectures.",
-            "Accelerated model inference using CUDA, benchmarking latency metrics to ensure seamless web deployment.",
-            "Strategically augmented training datasets by 30% (6,000+ custom samples) to mitigate model overfitting and improve robust tracking.",
-            "Analyzed accuracy and size metrics against open-source solutions to ensure optimal performance on resource-constrained platforms."
+            "Conducted applied R&D on real-time computer vision systems, fine-tuning YOLO deep learning models utilizing PyTorch and CUDA.",
+            "Engineered a 30% expansion in training datasets (6,000+ images) via photometric transformations to mitigate model overfitting in dynamic lighting environments.",
+            "Evaluated Edge AI deployment tradeoffs, balancing bounding-box accuracy with hardware computational limits for resource-constrained devices.",
+            "Benchmarked inference latency across edge hardware, optimizing perception algorithms to achieve production-ready performance for robotics integration."
         ]
     }
 ];
