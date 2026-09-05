@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            screens: {
+                'xs': '420px',
+            },
             colors: {
                 accent: 'rgb(var(--accent) / <alpha-value>)',
                 surface: {

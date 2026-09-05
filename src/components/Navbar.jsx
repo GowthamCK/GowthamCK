@@ -40,42 +40,45 @@ export default function Navbar() {
     return (
         <>
             <motion.nav
-                initial={{ y: -80 }}
-                animate={{ y: 0 }}
+                initial={{ y: -80, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-                    scrolled
-                        ? 'bg-surface/90 backdrop-blur-xl border-b border-surface-border'
-                        : 'bg-transparent'
-                }`}
+                className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-6 pt-3 sm:pt-4 pointer-events-none"
             >
-                <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-                    <a href="#" className="flex items-center gap-3 group">
-                        <div className="w-2 h-2 bg-accent rounded-full animate-pulse-slow" />
-                        <span className="font-mono text-xs font-bold text-accent tracking-widest">
-                            GCK_SYS
+                <div className={`max-w-7xl mx-auto h-14 px-4 sm:px-6 rounded-2xl flex items-center justify-between pointer-events-auto transition-all duration-300 border ${
+                    scrolled
+                        ? 'bg-surface/85 backdrop-blur-2xl border-accent/25 shadow-2xl shadow-black/40'
+                        : 'bg-surface/60 backdrop-blur-xl border-surface-border/80 shadow-lg shadow-black/20'
+                }`}>
+                    <a href="#" className="flex items-center gap-2.5 group">
+                        <div className="relative flex items-center justify-center w-2.5 h-2.5">
+                            <span className="absolute w-full h-full rounded-full bg-accent/40 animate-ping" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                        </div>
+                        <span className="font-mono text-xs font-extrabold text-tp tracking-widest group-hover:text-accent transition-colors">
+                            GCK<span className="text-accent">_SYS</span>
                         </span>
                     </a>
 
-                    <div className="hidden lg:flex items-center gap-0.5">
+                    <div className="hidden lg:flex items-center gap-1">
                         {navLinks.map((link) => (
                             <a
                                 key={link.label}
                                 href={link.href}
-                                className="group relative font-mono text-[10px] text-ts hover:text-accent transition-colors duration-300 tracking-widest px-3 py-2"
+                                className="group relative font-mono text-[10.5px] text-ts hover:text-accent transition-all duration-200 tracking-wider px-2.5 py-1.5 rounded-lg hover:bg-surface-raised/80"
                             >
-                                <span className="text-accent/30 mr-1">{link.code}.</span>
-                                {link.label}
-                                <span className="absolute bottom-0 left-3 right-3 h-[1px] bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                                <span className="text-accent/40 mr-1 text-[9px]">{link.code}.</span>
+                                <span>{link.label}</span>
+                                <span className="absolute bottom-0.5 left-2.5 right-2.5 h-[1.5px] bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-center rounded-full" />
                             </a>
                         ))}
                     </div>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2.5">
                         {/* Theme toggle */}
                         <button
                             onClick={toggleTheme}
-                            className="w-8 h-8 rounded-lg border border-surface-border flex items-center justify-center text-ts hover:text-accent hover:border-accent/30 transition-all duration-300"
+                            className="w-8 h-8 rounded-xl border border-surface-border/90 bg-surface-raised/60 flex items-center justify-center text-ts hover:text-accent hover:border-accent/40 transition-all duration-300 shadow-sm"
                             aria-label="Toggle theme"
                         >
                             <motion.div
@@ -88,18 +91,18 @@ export default function Navbar() {
                             </motion.div>
                         </button>
 
-                        <span className="hidden lg:block font-mono text-[10px] text-tm tracking-widest">
+                        <span className="hidden sm:inline-block font-mono text-[10px] text-tm tracking-widest px-2.5 py-1 rounded-lg bg-surface-raised/50 border border-surface-border/60">
                             {time}
                         </span>
 
                         <button
                             onClick={() => setMobileOpen(!mobileOpen)}
-                            className="lg:hidden flex flex-col gap-1.5 p-2"
+                            className="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-surface-raised/80 transition-colors"
                             aria-label="Toggle menu"
                         >
-                            <motion.span animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }} className="block w-5 h-[1px] bg-accent" />
-                            <motion.span animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }} className="block w-5 h-[1px] bg-accent" />
-                            <motion.span animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }} className="block w-5 h-[1px] bg-accent" />
+                            <motion.span animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }} className="block w-5 h-[1.5px] bg-accent" />
+                            <motion.span animate={mobileOpen ? { opacity: 0 } : { opacity: 1 }} className="block w-5 h-[1.5px] bg-accent" />
+                            <motion.span animate={mobileOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }} className="block w-5 h-[1.5px] bg-accent" />
                         </button>
                     </div>
                 </div>

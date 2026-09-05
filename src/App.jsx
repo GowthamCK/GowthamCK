@@ -97,8 +97,13 @@ function App() {
                 {!booting && (
                     <>
                         <ParticleCanvas />
-                        <div className="relative z-10 space-y-20 sm:space-y-28 md:space-y-36">
-                            <Navbar />
+                        {/* Ambient Aurora Glows */}
+                        <div className="ambient-glow-cyan top-[-100px] left-[-150px]" />
+                        <div className="ambient-glow-purple top-[35%] right-[-200px]" />
+                        <div className="ambient-glow-cyan bottom-[15%] left-[-150px]" />
+
+                        <Navbar />
+                        <main className="relative z-10">
                             <Hero />
                             <About />
                             <Education />
@@ -110,7 +115,7 @@ function App() {
                             <Leadership />
                             <ChatTerminal />
                             <Footer />
-                        </div>
+                        </main>
                     </>
                 )}
             </div>

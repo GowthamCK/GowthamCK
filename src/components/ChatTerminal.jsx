@@ -265,10 +265,10 @@ Try asking about:
 
     return (
         <section id="terminal" className="relative">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6">
-                <SectionHeader code="SYS_08" label="NEURAL_TERMINAL" title="Interactive Chatbot" />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                <SectionHeader code="SYS_09" label="NEURAL_TERMINAL" title="Interactive Chatbot" />
 
-                <div className="mt-8 sm:mt-10 border border-surface-border rounded-2xl bg-surface-raised/95 shadow-2xl overflow-hidden backdrop-blur-xl">
+                <div className="max-w-5xl mx-auto mt-6 sm:mt-8 border border-surface-border rounded-2xl bg-surface-raised/95 shadow-2xl overflow-hidden backdrop-blur-xl">
                     {/* Terminal Window Header */}
                     <div className="bg-surface-overlay px-4 py-3 border-b border-surface-border flex items-center justify-between">
                         <div className="flex items-center gap-2">

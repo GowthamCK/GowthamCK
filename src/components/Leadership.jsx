@@ -9,7 +9,7 @@ export default function Leadership() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionHeader code="SYS_08" label="COMMAND_LOG" title="Leadership Matrix" />
 
-                <div className="mt-8 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                     {leadershipRoles.map((item, i) => (
                         <motion.div
                             key={i}
@@ -18,7 +18,9 @@ export default function Leadership() {
                             viewport={{ once: true, margin: "-60px" }}
                             transition={{ duration: 0.6, delay: i * 0.1 }}
                             whileHover={{ y: -4, transition: { duration: 0.3 } }}
-                            className="group holo-card rounded-2xl p-4 sm:p-6 neon-border"
+                            className={`group holo-card rounded-2xl p-4 sm:p-6 neon-border ${
+                                i === 0 ? 'md:col-span-2' : ''
+                            }`}
                         >
                             <div className="relative z-10 flex items-start gap-4">
                                 <div className="w-9 h-9 border border-accent/20 rounded-xl flex items-center justify-center text-accent/60 group-hover:text-accent group-hover:border-accent/40 transition-all duration-500 shrink-0 mt-0.5">

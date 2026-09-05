@@ -152,10 +152,10 @@ export default function Certifications() {
     return (
         <section id="certifications" className="relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <SectionHeader code="SYS_07" label="CERT_REGISTRY" title="Verified Credentials" />
+                <SectionHeader code="SYS_06" label="CERT_REGISTRY" title="Verified Credentials" />
 
                 {/* Official Badges Showcase */}
-                <div className="mt-8 sm:mt-12 mb-12 sm:mb-16">
+                <div className="mt-6 sm:mt-8 mb-10 sm:mb-14">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 sm:mb-8">
                         <div className="flex items-center gap-2 sm:gap-3">
                             <Award size={18} className="text-accent shrink-0" />
@@ -225,7 +225,7 @@ export default function Certifications() {
                                     </div>
 
                                     {/* Badge Visual */}
-                                    <div className="bg-white rounded-xl p-3 shadow-md flex items-center justify-center w-full min-h-[220px] max-h-[280px] overflow-hidden my-2">
+                                    <div className="bg-white rounded-xl p-3 shadow-md flex items-center justify-center w-full min-h-[285px] overflow-hidden my-2">
                                         {badge.type === 'credly' ? (
                                             <iframe
                                                 src={`https://www.credly.com/embedded_badge/${badge.credlyId}`}

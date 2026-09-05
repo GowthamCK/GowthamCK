@@ -4,19 +4,19 @@ import { aboutText, systemSpecs } from '../data';
 function SectionHeader({ code, label, title }) {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-6 sm:mb-8"
         >
-            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-                <div className="w-1.5 h-1.5 bg-accent rounded-full shrink-0" />
-                <span className="font-mono text-[9px] sm:text-[10px] text-accent/50 tracking-[0.2em] sm:tracking-[0.3em] uppercase">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-surface-raised/70 border border-surface-border/80 backdrop-blur-md mb-3 sm:mb-4">
+                <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse shrink-0" />
+                <span className="font-mono text-[9px] sm:text-[10px] text-accent/70 tracking-[0.2em] uppercase font-semibold">
                     {code} // {label}
                 </span>
-                <div className="h-[1px] flex-1 bg-surface-border max-w-[60px] sm:max-w-[100px]" />
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-tp tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-tp tracking-tight">
                 {title}
             </h2>
         </motion.div>
@@ -31,7 +31,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionHeader code="SYS_01" label="ABOUT_MODULE" title="System Profile" />
 
-                <div className="mt-8 sm:mt-14 grid lg:grid-cols-[1fr_320px] gap-8 lg:gap-12 items-start">
+                <div className="mt-6 sm:mt-8 grid lg:grid-cols-[1fr_320px] gap-8 lg:gap-12 items-start">
                     <div className="space-y-5 sm:space-y-6">
                         {aboutText.map((paragraph, i) => (
                             <motion.p

@@ -9,7 +9,7 @@ export default function Education() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionHeader code="SYS_02" label="EDUCATION_LOG" title="Academic Nodes" />
 
-                <div className="mt-8 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                     {education.map((edu, i) => (
                         <motion.div
                             key={i}

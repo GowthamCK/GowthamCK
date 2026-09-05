@@ -9,9 +9,9 @@ export default function Achievements() {
     return (
         <section id="achievements" className="relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <SectionHeader code="SYS_06" label="ACHIEVEMENT_VAULT" title="Decoded Milestones" />
+                <SectionHeader code="SYS_05" label="ACHIEVEMENT_VAULT" title="Decoded Milestones" />
 
-                <div className="mt-8 sm:mt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                     {achievements.map((item, i) => {
                         const Icon = icons[i % icons.length];
                         return (

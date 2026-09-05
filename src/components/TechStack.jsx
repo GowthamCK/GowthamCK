@@ -13,9 +13,9 @@ export default function TechStack() {
     return (
         <section id="stack" className="relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <SectionHeader code="SYS_09" label="TECH_ARSENAL" title="Neural Toolkit & ATS Matrix" />
+                <SectionHeader code="SYS_07" label="TECH_ARSENAL" title="Neural Toolkit & ATS Matrix" />
 
-                <div className="mt-8 sm:mt-12 space-y-6 sm:space-y-8">
+                <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
                     {categories.map((cat, idx) => {
                         const items = techStack.filter(t => t.category === cat.key);
                         return (

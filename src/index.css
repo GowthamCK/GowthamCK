@@ -60,7 +60,19 @@ body {
 }
 
 section {
-    padding: 100px 0;
+    padding: 48px 0;
+}
+
+@media (min-width: 640px) {
+    section {
+        padding: 64px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        padding: 80px 0;
+    }
 }
 
 /* ── SCROLLBAR ─────────────────────────────────────── */
@@ -158,13 +170,15 @@ section {
     animation: none;
 }
 
-/* ── HOLOGRAPHIC CARD ──────────────────────────────── */
+/* ── HOLOGRAPHIC & MODERN GLASS CARD ──────────────── */
 .holo-card {
     position: relative;
     background: var(--card-bg);
-    backdrop-filter: blur(20px);
-    transition: transform 0.5s ease, box-shadow 0.5s ease, background 0.5s ease;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
     box-shadow: var(--card-shadow);
+    border: 1px solid rgb(var(--surface-border));
 }
 
 .holo-card::before {
@@ -175,26 +189,93 @@ section {
     padding: 1px;
     background: linear-gradient(
         135deg,
-        rgb(var(--accent) / 0.15) 0%,
-        transparent 40%,
-        transparent 60%,
-        rgb(var(--accent) / 0.08) 100%
+        rgb(var(--accent) / 0.25) 0%,
+        transparent 35%,
+        transparent 65%,
+        rgb(var(--accent) / 0.12) 100%
     );
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
     pointer-events: none;
-    opacity: var(--glow-opacity);
-    transition: opacity 0.5s ease;
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+}
+
+.holo-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    right: 20%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgb(var(--accent) / 0.5), transparent);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .holo-card:hover {
     transform: translateY(-4px);
+    border-color: rgb(var(--accent) / 0.35);
+    box-shadow: 0 16px 36px -10px rgb(var(--accent) / 0.12), 0 4px 16px -2px rgba(0, 0, 0, 0.4);
+}
+
+.holo-card:hover::after {
+    opacity: 1;
 }
 
 [data-theme="light"] .holo-card:hover {
-    box-shadow: 0 4px 24px rgba(0, 180, 140, 0.08), 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 12px 30px rgba(0, 180, 140, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* ── MODERN GRADIENT UTILITIES ─────────────────────── */
+.text-gradient-cyan {
+    background: linear-gradient(135deg, #ffffff 0%, #a5f3fc 45%, #00ffd1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .text-gradient-cyan {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0284c7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-subtle {
+    background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="light"] .text-gradient-subtle {
+    background: linear-gradient(180deg, #0f172a 0%, #475569 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ── AMBIENT AURORA SPOTS ──────────────────────────── */
+.ambient-glow-cyan {
+    position: fixed;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(var(--accent) / 0.07) 0%, transparent 70%);
+    filter: blur(90px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.ambient-glow-purple {
+    position: fixed;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+    filter: blur(100px);
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* ── NEON EFFECTS ──────────────────────────────────── */
