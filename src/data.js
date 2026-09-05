@@ -55,6 +55,13 @@ export const experience = [
         period: "Nov 2025 – Dec 2025",
         location: "Bangalore, India",
         status: "COMPLETED",
+        skills: [
+            "LLM Agents & RAG",
+            "Django Ninja",
+            "React",
+            "n8n Workflows",
+            "AI Guardrails"
+        ],
         points: [
             "Architected a scalable Learning Management System (LMS) using Django Ninja and React with strict Role-Based Access Control (RBAC), supporting 500+ active users.",
             "Engineered multi-agent n8n automation workflows and RAG-based AI agents to optimize internal data retrieval, operations, and user guidance.",
@@ -68,6 +75,13 @@ export const experience = [
         period: "Feb 2025 – Nov 2025",
         location: "Bangalore, India",
         status: "COMPLETED",
+        skills: [
+            "Robotics & Kinematics",
+            "Modular IoT",
+            "Hardware Assembly",
+            "Zero-to-One SaaS",
+            "STEM Curriculum"
+        ],
         points: [
             "Orchestrated 4 STEM programs for 150+ students, authoring comprehensive K-12 curricula focused on Robotics, IoT, and hardware design.",
             "Mentored undergraduates in building modular IoT systems, successfully bridging theoretical kinematics with practical hardware assembly and programming.",
@@ -80,6 +94,13 @@ export const experience = [
         period: "Oct 2024 – Jan 2025",
         location: "Bangalore, India",
         status: "COMPLETED",
+        skills: [
+            "PyTorch & CUDA",
+            "YOLO Detection",
+            "Computer Vision",
+            "Edge AI Optimization",
+            "Dataset Engineering"
+        ],
         points: [
             "Conducted applied R&D on real-time computer vision systems, fine-tuning YOLO deep learning models utilizing PyTorch and CUDA.",
             "Engineered a 30% expansion in training datasets (6,000+ images) via photometric transformations to mitigate model overfitting in dynamic lighting environments.",

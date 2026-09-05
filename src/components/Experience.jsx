@@ -54,6 +54,27 @@ export default function Experience() {
                                                 </li>
                                             ))}
                                         </ul>
+
+                                        {exp.skills && exp.skills.length > 0 && (
+                                            <div className="mt-5 pt-4 border-t border-surface-border/60">
+                                                <div className="flex items-center gap-2 mb-2.5">
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+                                                    <span className="font-mono text-[9px] sm:text-[10px] text-tm uppercase tracking-widest font-semibold">
+                                                        Key Competencies
+                                                    </span>
+                                                </div>
+                                                <div className="flex flex-wrap gap-2">
+                                                    {exp.skills.map((skill, k) => (
+                                                        <span
+                                                            key={k}
+                                                            className="font-mono text-[10.5px] sm:text-[11.5px] border border-accent/30 text-accent/90 bg-accent/5 hover:border-accent hover:text-accent hover:bg-accent/10 rounded-lg px-2.5 sm:px-3 py-1 transition-all duration-200 cursor-default font-medium shadow-sm"
+                                                        >
+                                                            {skill}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             </motion.div>
