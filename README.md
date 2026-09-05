@@ -6,9 +6,6 @@ I architect hybrid Web2/Web3 enterprise systems and conduct applied research in 
 
 - 🏆 **₹15 Lakh Central Grant Winner**: Project Lead & Lead Architect for MoMSME-funded Blockchain Traceability SaaS.
 - 🔬 **Applied Research**: IISc Bangalore (Computer Vision & YOLO accuracy-latency edge benchmarking).
-- 📜 **Co-Inventor**: Published Patent in Blockchain-Enabled Carbon Capture & Tokenization.
-- 🛡️ **13 Verified Badges**: Oracle Certified DevOps Professional, AWS Academy Cloud Architect, Google Certified.
-- 🤖 **Interactive Portfolio Bot**: Built-in Neural CLI grounded strictly on my verified profile.
 - 📫 Connect: **[ckgowtham12@gmail.com](mailto:ckgowtham12@gmail.com)** | **[Live Portfolio](https://gowthamck.github.io/GowthamCK/)**
 
 <p align="left">
@@ -74,8 +71,6 @@ I architect hybrid Web2/Web3 enterprise systems and conduct applied research in 
 | :--- | :--- | :--- |
 | **Enterprise Blockchain Supply Chain & AI Governance** | `Blockchain` `Python` `Claude/Cursor Governance` `Smart Contracts` | **MoMSME Funded (₹15L grant)**: Enterprise hybrid Web2/Web3 SaaS with deterministic prompt guardrails for autonomous AI development tools, preventing structural hallucinations. |
 | **Friend-or-Foe Edge Vision System** | `Python` `YOLO11s` `ONNX Runtime` `OpenCV` `Edge AI` | High-precision edge computer vision pipeline for real-time detection on resource-constrained embedded nodes. |
-| **AutoTranslate Multi-Agent Engine** | `Python` `TypeScript` `AST Parsing` `LLM Pipeline` | Automated source-to-source code migration framework utilizing deterministic AST validation and LLM multi-agent translation loops. |
-| **Neural Interactive Portfolio Bot** | `React` `Tailwind CSS` `Framer Motion` `Edge Search` | Low-latency terminal and conversational bot embedded directly into GitHub Pages, answering queries with deterministic verification. |
 
 ---
 
