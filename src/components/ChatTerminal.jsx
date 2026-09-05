@@ -57,8 +57,8 @@ export default function ChatTerminal() {
             return {
                 text: `Available Terminal Commands & Queries:
 • \`about\`      : Summary of Gowtham's profile & focus areas
-• \`projects\`   : Key engineering projects (Sentinel, LMS, E-Commerce)
-• \`msme\`       : ₹15 Lakh MSME grant & Blockchain patent details
+• \`projects\`   : Key engineering projects (Blockchain Traceability, Friend-or-Foe, LMS)
+• \`msme\`       : ₹15 Lakh MSME grant & Blockchain traceability details
 • \`iisc\`       : Research internship at Aerospace Dept, IISc Bangalore
 • \`certs\`      : 13 verified credentials (Oracle, AWS Credly, Gemini, Coursera)
 • \`exp\`        : Professional experience (Polygnan, IISc)
@@ -71,14 +71,14 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
             };
         }
 
-        // 3. MSME Hackathon / ₹15 Lakhs / Grant / Funding / AI Governance / Blockchain
-        if (q.includes('msme') || q.includes('15 lakh') || q.includes('15l') || q.includes('grant') || q.includes('hackathon') || q.includes('governance') || q.includes('polygon') || q.includes('supply chain')) {
+        // 3. MSME Hackathon / ₹15 Lakhs / Grant / Funding / Blockchain / Supply Chain
+        if (q.includes('msme') || q.includes('15 lakh') || q.includes('15l') || q.includes('grant') || q.includes('hackathon') || q.includes('polygon') || q.includes('supply chain')) {
             return {
-                text: `🏆 ENTERPRISE BLOCKCHAIN TRACEABILITY & AI GOVERNANCE (₹15L MoMSME Grant):
+                text: `🏆 ENTERPRISE BLOCKCHAIN SUPPLY CHAIN TRACEABILITY (₹15L MoMSME Grant):
 • Role: Project Lead & Lead Architect
 • Funding: Secured ₹15 Lakhs central government grant from Ministry of MSME (National MSME Hackathon 4.0 Winner).
 • Architecture: High-assurance hybrid Web2/Web3 platform bridging tamper-evident distributed ledgers with scalable enterprise SaaS services.
-• Deterministic AI Governance: Pioneered architectural guardrails and prompt governance to steer autonomous code-generation tools while eliminating hallucinations and protecting IP integrity.
+• Features: Milestone verification, cryptographic audit trails, and role-based data access for manufacturing consortia.
 • Patent: Co-Inventor of published patent "Blockchain-Enabled System for Carbon Capture Verification and Automated Emission Credit Trading" (2026).`
             };
         }
@@ -128,10 +128,10 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
         // 8. Projects general
         if (q === 'projects' || q === 'proj' || q.includes('project') || q.includes('portfolio') || q.includes('built')) {
             return {
-                text: `🚀 FEATURED ACTION & METRIC-DRIVEN PROJECTS:
-1. Enterprise Blockchain Supply Chain & AI Governance (Next.js, PostgreSQL, Polygon PoS, Cursor/Claude Guardrails) — Managing ₹15L MoMSME grant with deterministic AI prompt governance.
+                text: `🚀 FEATURED ENGINEERING PROJECTS:
+1. Enterprise Blockchain Supply Chain Traceability Platform (Next.js, PostgreSQL, Polygon PoS, Smart Contracts) — Supported by ₹15L MoMSME central grant for provenance verification.
 2. Real-Time Edge AI Surveillance System (YOLO11s, Raspberry Pi 4B, OV5647 IR camera, PyTorch ONNX) — <50ms latency nocturnal Friend-or-Foe edge classification.
-3. Polygnan LMS & Autonomous AI Agents (Django Ninja, React, RBAC, n8n, RAG Agents) — 500+ active users with multi-agent workflows.`
+3. Polygnan LMS & Multi-Agent Workflows (Django Ninja, React, RBAC, n8n, RAG Agents) — 500+ active users with automated educational workflows.`
             };
         }
 
@@ -143,7 +143,7 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
 • AWS (2 Credly Badges): AWS Academy Cloud Architecting & Cloud Foundations.
 • Google for Education (1 Badge): Gemini Certified University Student (Credential.net).
 • Coursera (4 Certificates): Quantum Computing Specialization (Packt), Qiskit, Python for QC, Agile Software Dev (Univ of Minnesota).
-• Live Directory: View the verified badges in the SYS_07 registry above or on Credly: https://www.credly.com/users/gowtham-c-k/badges/credly`
+• Live Directory: View the verified badges in the SYS_06 registry above or on Credly: https://www.credly.com/users/gowtham-c-k/badges/credly`
             };
         }
 
@@ -205,8 +205,8 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
         if (q === 'about' || q.includes('who is') || q.includes('who are') || q.includes('bio') || q.includes('introduce') || q.includes('hello') || q.includes('hi') || q.includes('hey')) {
             return {
                 text: `👤 GOWTHAM C K [Software Engineer & Applied AI Researcher]:
-• Profile: Software Engineer and Applied AI Researcher specializing in Edge AI, Computer Vision, AI-Assisted Software Engineering, and Enterprise Blockchain Architecture.
-• Research Focus: Privacy-Preserving Edge AI and deterministic AI governance for autonomous LLM tools.
+• Profile: Software Engineer and Applied AI Researcher specializing in Edge AI, Computer Vision, and Enterprise Blockchain Architecture.
+• Research Focus: Edge AI, real-time Computer Vision on embedded hardware (YOLO/ONNX), and scalable cloud systems.
 • Key Accreditations: ₹15L MoMSME Central Government Grant Winner, Published Blockchain Patent Co-Inventor, ICCSSE Scholar @ RV University (CGPA 10), 13 Verified Cloud/AI Credentials.
 • Base Location: Mysore & Bangalore, India.`
             };
@@ -218,7 +218,7 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
             text: `⚠️ [TERMINAL_GUARD]: I am Gowtham's neural portfolio assistant. I only provide verified factual information regarding Gowtham C K's career, research, projects, skills, education, and achievements.
 
 Try asking about:
-• "Tell me about the ₹15L MSME grant & AI governance"
+• "Tell me about the ₹15L MSME grant & Blockchain traceability platform"
 • "What research did he do at IISc Bangalore?"
 • "Explain the Friend-or-Foe YOLO11s edge AI project"
 • "What are his ATS skills and 13 verified certifications?"

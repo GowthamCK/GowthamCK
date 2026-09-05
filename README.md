@@ -2,7 +2,7 @@
 
 ### 👨‍💻 Software Engineer & Applied AI Researcher
 
-I architect hybrid Web2/Web3 enterprise systems and conduct applied research in **Edge AI**, **Computer Vision**, and **AI-Assisted Software Engineering**. I specialize in engineering deterministic guardrails for autonomous LLM agents and deploying low-latency deep learning models on resource-constrained hardware.
+I architect hybrid Web2/Web3 enterprise systems and conduct applied research in **Edge AI**, **Computer Vision**, and **AI-Assisted Software Engineering**, deploying low-latency deep learning models on resource-constrained hardware.
 
 - 🏆 **₹15 Lakh Central Grant Winner**: Project Lead & Lead Architect for MoMSME-funded Blockchain Traceability SaaS.
 - 🔬 **Applied Research**: IISc Bangalore (Computer Vision & YOLO accuracy-latency edge benchmarking).
@@ -69,7 +69,7 @@ I architect hybrid Web2/Web3 enterprise systems and conduct applied research in 
 
 | Project | Stack | Abstract & Impact |
 | :--- | :--- | :--- |
-| **Enterprise Blockchain Supply Chain & AI Governance** | `Blockchain` `Python` `Claude/Cursor Governance` `Smart Contracts` | **MoMSME Funded (₹15L grant)**: Enterprise hybrid Web2/Web3 SaaS with deterministic prompt guardrails for autonomous AI development tools, preventing structural hallucinations. |
+| **Enterprise Blockchain Supply Chain Traceability Platform** | `Blockchain` `Python` `Next.js` `Smart Contracts` | **MoMSME Funded (₹15L grant)**: Enterprise hybrid Web2/Web3 SaaS platform bridging distributed ledgers with scalable cloud infrastructure for transparent supply chain audit trails. |
 | **Friend-or-Foe Edge Vision System** | `Python` `YOLO11s` `ONNX Runtime` `OpenCV` `Edge AI` | High-precision edge computer vision pipeline for real-time detection on resource-constrained embedded nodes. |
 
 ---

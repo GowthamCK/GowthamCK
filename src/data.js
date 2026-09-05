@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Globe, Award } from 'lucide-react';
 export const personalInfo = {
     name: "Gowtham C K",
     headline: "Hi, I'm Gowtham C K.",
-    subtitle: "I architect hybrid Web2/Web3 enterprise systems and conduct applied research in Edge AI and AI-Assisted Software Engineering. I specialize in building deterministic guardrails for autonomous LLM agents and deploying low-latency computer vision models on resource-constrained hardware.",
+    subtitle: "I architect hybrid Web2/Web3 enterprise systems and conduct applied research in Edge AI and AI-Assisted Software Engineering, deploying low-latency computer vision models on resource-constrained hardware.",
     designation: "Software Engineer & Applied AI Researcher",
     systemStatus: "ONLINE",
     email: "ckgowtham12@gmail.com",
@@ -18,7 +18,7 @@ export const personalInfo = {
 
 export const aboutText = [
     "I am a Software Engineer and Applied AI Researcher passionate about solving complex, real-world problems at the intersection of Artificial Intelligence, Edge Computing, and System Architecture.",
-    "My research focuses on **AI-Assisted Software Engineering** and **Privacy-Preserving Edge AI**. At the Indian Institute of Science (IISc Bangalore), I conducted applied research in real-time computer vision, fine-tuning YOLO models to evaluate accuracy-latency trade-offs on edge hardware. In the enterprise space, I architected an MSME Blockchain Supply Chain Traceability Platform, securing a ₹15 Lakh central government grant. As part of this project, I engineered deterministic AI governance frameworks to safely guide autonomous AI development tools (like Cursor and Claude) in generating complex SaaS scaffolding, preventing structural hallucinations.",
+    "My research focuses on **Edge AI** and **Computer Vision**. At the Indian Institute of Science (IISc Bangalore), I conducted applied research in real-time computer vision, fine-tuning YOLO models to evaluate accuracy-latency trade-offs on edge hardware. In the enterprise space, I architected an MSME Blockchain Supply Chain Traceability Platform, securing a ₹15 Lakh central government grant to deliver high-assurance provenance tracking and tamper-evident audit trails.",
     "From deploying RAG-based AI agents for learning management systems at the Polygnan Foundation to co-inventing a published patent in blockchain-enabled carbon capture, I am driven by building secure, scalable, and trustworthy systems. I am currently seeking applied research fellowships and PhD opportunities to further explore autonomous multi-agent systems, AI reliability, and large-scale architectural innovation."
 ];
 
@@ -99,11 +99,11 @@ export const experience = [
 
 export const projects = [
     {
-        title: "Enterprise Blockchain Traceability & AI Governance",
+        title: "Enterprise Blockchain Supply Chain Traceability Platform",
         role: "Project Lead / Lead Architect",
         codename: "SYS_NEXUS // MOMSME_PLATFORM",
-        description: "Lead architect for an enterprise supply chain traceability platform supported by a ₹15 Lakh MoMSME central government grant. Engineered a high-assurance hybrid Web2/Web3 architecture bridging tamper-evident distributed ledgers with scalable enterprise SaaS services. Concurrently pioneered deterministic AI governance frameworks—establishing formal architectural guardrails to safely steer autonomous code-generation tools while eliminating hallucinations and safeguarding IP integrity.",
-        tags: ["Hybrid Web2/Web3", "Enterprise Architecture", "Next.js", "Polygon PoS", "AI Governance", "Smart Contracts"],
+        description: "Lead architect for an enterprise supply chain traceability platform supported by a ₹15 Lakh MoMSME central government grant. Engineered a high-assurance hybrid Web2/Web3 architecture bridging tamper-evident distributed ledgers with scalable enterprise SaaS services, delivering milestone verification, transparent audit trails, and role-based data access for manufacturing consortia.",
+        tags: ["Hybrid Web2/Web3", "Enterprise Architecture", "Next.js", "Polygon PoS", "PostgreSQL", "Smart Contracts"],
         size: "large",
         status: "DEPLOYED"
     },
