@@ -24,10 +24,17 @@ export default function Projects() {
                         >
                             <div className="relative z-10">
                                 <div className="flex items-center justify-between mb-4">
-                                    <span className="font-mono text-[10px] text-accent/40 tracking-[0.2em]">
-                                        {project.codename}
-                                    </span>
-                                    <ArrowUpRight size={16} className="text-tm group-hover:text-accent transition-colors duration-300" />
+                                    <div className="flex flex-wrap items-center gap-2">
+                                        <span className="font-mono text-[10px] text-accent/50 tracking-[0.2em]">
+                                            {project.codename}
+                                        </span>
+                                        {project.role && (
+                                            <span className="font-mono text-[9px] text-accent/90 bg-accent/10 border border-accent/25 px-2 py-0.5 rounded tracking-wider">
+                                                {project.role}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <ArrowUpRight size={16} className="text-tm group-hover:text-accent transition-colors duration-300 shrink-0" />
                                 </div>
 
                                 <h3 className="text-xl font-bold text-tp mb-3 group-hover:text-accent transition-colors duration-500">

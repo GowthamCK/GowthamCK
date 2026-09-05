@@ -2,8 +2,9 @@ import { Github, Linkedin, Mail, Globe, Award } from 'lucide-react';
 
 export const personalInfo = {
     name: "Gowtham C K",
-    subtitle: "Tech Explorer & Software Engineer passionate about Deep Tech. ICCSSE Scholar @ RV University. Focused on AI, Edge Computing & Quantum Algorithms. Skilled in Full-Stack Architecture & Rapid Prototyping.",
-    designation: "NEURAL_ARCHITECT // DEEP_TECH_ENGINEER",
+    headline: "Hi, I'm Gowtham C K.",
+    subtitle: "I architect hybrid Web2/Web3 enterprise systems and conduct applied research in Edge AI and AI-Assisted Software Engineering. I specialize in building deterministic guardrails for autonomous LLM agents and deploying low-latency computer vision models on resource-constrained hardware.",
+    designation: "Software Engineer & Applied AI Researcher",
     systemStatus: "ONLINE",
     email: "ckgowtham12@gmail.com",
     socials: [
@@ -16,9 +17,9 @@ export const personalInfo = {
 };
 
 export const aboutText = [
-    "[ PROFILE: GOWTHAM | IS ENGINEER ]",
-    "I engineer scalable, tech-for-good solutions at the intersection of AI research and production.",
-    "From fine-tuning edge vision models at IISc Bangalore to architecting full-stack platforms at Polygnan Foundation, I bring disciplined execution and relentless curiosity to building systems that matter."
+    "I am a Software Engineer and Applied AI Researcher passionate about solving complex, real-world problems at the intersection of Artificial Intelligence, Edge Computing, and System Architecture.",
+    "My research focuses on **AI-Assisted Software Engineering** and **Privacy-Preserving Edge AI**. At the Indian Institute of Science (IISc Bangalore), I conducted applied research in real-time computer vision, fine-tuning YOLO models to evaluate accuracy-latency trade-offs on edge hardware. In the enterprise space, I architected an MSME Blockchain Supply Chain Traceability Platform, securing a ₹15 Lakh central government grant. As part of this project, I engineered deterministic AI governance frameworks to safely guide autonomous AI development tools (like Cursor and Claude) in generating complex SaaS scaffolding, preventing structural hallucinations.",
+    "From deploying RAG-based AI agents for learning management systems at the Polygnan Foundation to co-inventing a published patent in blockchain-enabled carbon capture, I am driven by building secure, scalable, and trustworthy systems. I am currently seeking applied research fellowships and PhD opportunities to further explore autonomous multi-agent systems, AI reliability, and large-scale architectural innovation."
 ];
 
 export const systemSpecs = [
@@ -98,26 +99,29 @@ export const experience = [
 
 export const projects = [
     {
-        title: "Real-Time Friend-or-Foe Detection System",
-        codename: "PROJECT_SENTINEL",
-        description: "Engineered an end-to-end edge detection system by deploying a fine-tuned YOLO model on a Raspberry Pi. Developed a Python control center for wireless IR video streaming, live GPS visualization, and geotagged alerts. Optimized inference speed using ONNX runtime, achieving <50ms latency per frame.",
-        tags: ["Python", "Raspberry Pi", "YOLO", "ONNX", "Edge AI"],
+        title: "Enterprise Blockchain Traceability & AI Governance",
+        role: "Project Lead / Lead Architect",
+        codename: "SYS_NEXUS // MOMSME_PLATFORM",
+        description: "Lead architect for an enterprise supply chain traceability platform supported by a ₹15 Lakh MoMSME central government grant. Engineered a high-assurance hybrid Web2/Web3 architecture bridging tamper-evident distributed ledgers with scalable enterprise SaaS services. Concurrently pioneered deterministic AI governance frameworks—establishing formal architectural guardrails to safely steer autonomous code-generation tools while eliminating hallucinations and safeguarding IP integrity.",
+        tags: ["Hybrid Web2/Web3", "Enterprise Architecture", "Next.js", "Polygon PoS", "AI Governance", "Smart Contracts"],
         size: "large",
         status: "DEPLOYED"
     },
     {
-        title: "E-commerce Platform with Shopify API",
-        codename: "PROJECT_NEXUS",
-        description: "Built a headless platform supporting 100+ concurrent users, reducing maintenance overhead by 90% via API integration. Implemented secure checkout flows and dynamic cart state management using React Context API and local storage.",
-        tags: ["React", "Shopify API", "Context API", "Headless CMS"],
+        title: "Real-Time Edge AI Surveillance System",
+        role: "Applied AI Researcher",
+        codename: "SYS_SENTINEL // NOCTURNAL_VISION",
+        description: "Engineered a nocturnal \"Friend-or-Foe\" detection system for resource-constrained edge environments. Fine-tuned and deployed YOLO11s on a Raspberry Pi 4 B with an OV5647 IR camera. Optimized the PyTorch inference pipeline using ONNX Runtime to achieve under 50 ms latency per frame in low-light conditions.",
+        tags: ["YOLO11s", "Raspberry Pi 4B", "PyTorch", "ONNX Runtime", "Edge AI", "Computer Vision"],
         size: "small",
-        status: "LIVE"
+        status: "DEPLOYED"
     },
     {
-        title: "Scalable LMS Platform",
-        codename: "PROJECT_CORTEX",
-        description: "Architected a cohort-based learning platform with RBAC, JWT authentication, and polymorphic assessment engine powering 500+ active users with Django Ninja & React.",
-        tags: ["Django Ninja", "React", "PostgreSQL", "Docker", "RBAC"],
+        title: "Polygnan LMS & Autonomous AI Agents",
+        role: "AI Intern",
+        codename: "SYS_CORTEX // AGENTIC_LMS",
+        description: "Architected a scalable Learning Management System using Django Ninja and React with strict Role-Based Access Control (RBAC) for 500+ users. Engineered multi-agent n8n automation workflows and RAG-based AI agents to optimize internal data retrieval and user guidance.",
+        tags: ["Django Ninja", "React", "PostgreSQL", "n8n Automation", "RAG Agents", "RBAC"],
         size: "small",
         status: "ACTIVE"
     }
@@ -169,28 +173,45 @@ export const leadershipRoles = [
 ];
 
 export const techStack = [
-    { name: "Python", category: "core" },
-    { name: "Java", category: "core" },
-    { name: "JavaScript", category: "core" },
-    { name: "SQL", category: "core" },
-    { name: "React", category: "core" },
-    { name: "Django", category: "core" },
-    { name: "Django Ninja", category: "core" },
-    { name: "REST APIs", category: "core" },
-    { name: "YOLO", category: "ai" },
-    { name: "OpenCV", category: "ai" },
+    // Applied Research & AI
+    { name: "Machine Learning", category: "ai" },
     { name: "Deep Learning", category: "ai" },
-    { name: "RAG", category: "ai" },
-    { name: "LLMs", category: "ai" },
-    { name: "Model Fine-Tuning", category: "ai" },
-    { name: "AWS", category: "cloud" },
-    { name: "Oracle Cloud", category: "cloud" },
-    { name: "GCP", category: "cloud" },
-    { name: "Azure", category: "cloud" },
-    { name: "Docker", category: "devops" },
-    { name: "Git", category: "devops" },
-    { name: "n8n", category: "devops" },
-    { name: "Jira", category: "devops" },
-    { name: "PostgreSQL", category: "core" },
-    { name: "HTML5/CSS3", category: "core" },
+    { name: "PyTorch", category: "ai" },
+    { name: "YOLO11s", category: "ai" },
+    { name: "RAG (Retrieval-Augmented Generation)", category: "ai" },
+    { name: "Autonomous AI Agents", category: "ai" },
+    { name: "Computer Vision", category: "ai" },
+    { name: "ONNX Runtime", category: "ai" },
+    { name: "Edge AI", category: "ai" },
+
+    // Software Engineering
+    { name: "System Architecture", category: "se" },
+    { name: "Code Translation & Migration", category: "se" },
+    { name: "Static Analysis concepts", category: "se" },
+    { name: "REST APIs", category: "se" },
+    { name: "Git", category: "se" },
+    { name: "CI/CD", category: "se" },
+    { name: "Code Review", category: "se" },
+
+    // Systems & Infrastructure
+    { name: "Linux", category: "systems" },
+    { name: "Ubuntu", category: "systems" },
+    { name: "AWS", category: "systems" },
+    { name: "Oracle Cloud Infrastructure (OCI)", category: "systems" },
+    { name: "GCP", category: "systems" },
+    { name: "Docker", category: "systems" },
+    { name: "Jenkins", category: "systems" },
+    { name: "n8n Automation", category: "systems" },
+
+    // Languages & Frameworks
+    { name: "Python", category: "languages" },
+    { name: "Java", category: "languages" },
+    { name: "C", category: "languages" },
+    { name: "TypeScript", category: "languages" },
+    { name: "JavaScript", category: "languages" },
+    { name: "SQL", category: "languages" },
+    { name: "Next.js", category: "languages" },
+    { name: "React", category: "languages" },
+    { name: "Django Ninja", category: "languages" },
+    { name: "PostgreSQL", category: "languages" },
 ];

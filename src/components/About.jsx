@@ -42,7 +42,15 @@ export default function About() {
                                 transition={{ duration: 0.6, delay: i * 0.15 }}
                                 className="text-ts leading-[1.8] sm:leading-[1.85] text-[13px] sm:text-[14px]"
                             >
-                                {paragraph}
+                                {paragraph.split(/(\*\*.*?\*\*)/g).map((chunk, idx) =>
+                                    chunk.startsWith('**') && chunk.endsWith('**') ? (
+                                        <strong key={idx} className="text-tp font-semibold text-accent/90">
+                                            {chunk.slice(2, -2)}
+                                        </strong>
+                                    ) : (
+                                        chunk
+                                    )
+                                )}
                             </motion.p>
                         ))}
                     </div>

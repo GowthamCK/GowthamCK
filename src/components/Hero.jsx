@@ -56,19 +56,19 @@ export default function Hero() {
                     <div className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse shrink-0" />
                 </motion.div>
 
-                {/* Main name with glitch */}
+                {/* Main headline with glitch */}
                 <motion.h1
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="glitch-text text-4xl xs:text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-tp tracking-tight sm:tracking-tighter leading-[1.05] sm:leading-[0.9] break-words"
-                    data-text={personalInfo.name}
+                    data-text={personalInfo.headline || personalInfo.name}
                 >
-                    {personalInfo.name}
+                    {personalInfo.headline || personalInfo.name}
                 </motion.h1>
 
-                {/* Typing designation */}
-                <motion.div
+                {/* Typing designation (Semantic H2 for LLM/SEO ranking) */}
+                <motion.h2
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 1 }}
@@ -76,7 +76,7 @@ export default function Hero() {
                 >
                     <span>{displayedRole}</span>
                     <span className="animate-pulse ml-1">▋</span>
-                </motion.div>
+                </motion.h2>
 
                 {/* Subtitle */}
                 <motion.p

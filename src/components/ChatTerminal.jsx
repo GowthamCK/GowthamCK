@@ -71,14 +71,15 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
             };
         }
 
-        // 3. MSME Hackathon / ₹15 Lakhs / Grant / Funding
-        if (q.includes('msme') || q.includes('15 lakh') || q.includes('15l') || q.includes('grant') || q.includes('hackathon') || q.includes('funding')) {
+        // 3. MSME Hackathon / ₹15 Lakhs / Grant / Funding / AI Governance / Blockchain
+        if (q.includes('msme') || q.includes('15 lakh') || q.includes('15l') || q.includes('grant') || q.includes('hackathon') || q.includes('governance') || q.includes('polygon') || q.includes('supply chain')) {
             return {
-                text: `🏆 NATIONAL MSME HACKATHON 4.0 WINNER:
-• Award: Secured ₹15 Lakhs in project grant funding from the Ministry of MSME, Government of India.
-• Project: Blockchain-Enabled Carbon Capture Verification & Automated Emission Credit Trading System.
-• Patent Status: Co-Inventor of a published patent for this novel blockchain architecture (Published 2026).
-• Key Tech: Blockchain, Smart Contracts, Carbon Verification, IoT Integration.`
+                text: `🏆 ENTERPRISE BLOCKCHAIN TRACEABILITY & AI GOVERNANCE (₹15L MoMSME Grant):
+• Role: Project Lead & Lead Architect
+• Funding: Secured ₹15 Lakhs central government grant from Ministry of MSME (National MSME Hackathon 4.0 Winner).
+• Architecture: High-assurance hybrid Web2/Web3 platform bridging tamper-evident distributed ledgers with scalable enterprise SaaS services.
+• Deterministic AI Governance: Pioneered architectural guardrails and prompt governance to steer autonomous code-generation tools while eliminating hallucinations and protecting IP integrity.
+• Patent: Co-Inventor of published patent "Blockchain-Enabled System for Carbon Capture Verification and Automated Emission Credit Trading" (2026).`
             };
         }
 
@@ -88,18 +89,18 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
                 text: `📜 PUBLISHED PATENT:
 • Title: "Blockchain-Enabled System for Carbon Capture Verification and Automated Emission Credit Trading"
 • Role: Co-Inventor (Published 2026)
-• Impact: Automates verification of carbon credits and eliminates double-counting using decentralized cryptographic ledgers.`
+• Impact: Automates verification of carbon capture credits and eliminates double-counting using decentralized cryptographic ledgers.`
             };
         }
 
-        // 5. IISc Bangalore / Aerospace / Kreeda / YOLO
+        // 5. IISc Bangalore / Aerospace / Kreeda / YOLO / Edge AI
         if (q.includes('iisc') || q.includes('aerospace') || q.includes('kreeda') || q.includes('exercise') || q.includes('cuda')) {
             return {
                 text: `🔬 RESEARCH / PROJECT INTERN — Aerospace Dept, IISc Bangalore (Oct 2024 – Jan 2025):
-• Project Kreeda.ai: Engineered real-time exercise pose tracking by fine-tuning YOLO nano architectures for edge efficiency.
-• CUDA Acceleration: Benchmarked and optimized model inference using CUDA to ensure sub-second latency for seamless web deployment.
-• Dataset Augmentation: Strategically augmented training datasets by +30% (6,000+ custom samples) to mitigate overfitting.
-• Performance: Analyzed size vs accuracy tradeoffs against open-source benchmarks to guarantee high fps on low-power devices.`
+• Applied Research: Real-time computer vision evaluating accuracy-latency tradeoffs on edge hardware.
+• Model Tuning: Fine-tuned YOLO models (Kreeda.ai exercise pose tracking) for edge efficiency.
+• CUDA Acceleration: Benchmarked and accelerated model inference via CUDA to guarantee sub-second latency for seamless web deployment.
+• Dataset Augmentation: Strategically augmented training datasets by +30% (6,000+ custom samples) to mitigate overfitting.`
             };
         }
 
@@ -107,30 +108,30 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
         if (q.includes('polygnan') || q.includes('lms') || q.includes('cortex') || q.includes('stem') || q.includes('robotics')) {
             return {
                 text: `🏢 POLYGNAN FOUNDATION EXPERIENCE:
-• AI Intern (Nov 2025 – Dec 2025): Architected a scalable LMS using Django Ninja & React with RBAC supporting 500+ active users. Built automated n8n workflows and RAG-based AI agents.
+• AI Intern (Nov 2025 – Dec 2025): Architected a scalable LMS using Django Ninja & React with strict Role-Based Access Control (RBAC) for 500+ active users. Built multi-agent n8n workflows and RAG-based AI agents for internal retrieval and guidance.
 • Fellow (Apr 2025 – Nov 2025): Directed 4 STEM programs for 150+ students; authored K-12 curricula for Robotics & Design Thinking.
-• Engineering Intern (Feb 2025 – Mar 2025): Spearheaded web development research for the foundation's digital modernization.`
+• Engineering Intern (Feb 2025 – Mar 2025): Led web development research for the foundation's digital modernization.`
             };
         }
 
-        // 7. Friend-or-Foe / Sentinel / Raspberry Pi
-        if (q.includes('friend') || q.includes('foe') || q.includes('sentinel') || q.includes('raspberry') || q.includes('onnx')) {
+        // 7. Friend-or-Foe / Sentinel / YOLO11s / Raspberry Pi / Edge AI
+        if (q.includes('friend') || q.includes('foe') || q.includes('sentinel') || q.includes('raspberry') || q.includes('onnx') || q.includes('yolo11') || q.includes('camera') || q.includes('surveillance')) {
             return {
-                text: `🛡️ REAL-TIME FRIEND-OR-FOE DETECTION SYSTEM [PROJECT_SENTINEL]:
-• Edge Detection: Deployed fine-tuned YOLO model directly onto a Raspberry Pi for low-latency target classification.
-• Optimization: Accelerated ONNX runtime inference, achieving sub-50ms latency (<50ms/frame).
-• Control Center: Python ground control software featuring wireless IR video streaming, live GPS mapping, and automated geotagged alerts.`
+                text: `🛡️ REAL-TIME EDGE AI SURVEILLANCE SYSTEM [PROJECT_SENTINEL]:
+• Role: Applied AI Researcher
+• Hardware: Fine-tuned and deployed YOLO11s on a Raspberry Pi 4 B with an OV5647 IR camera.
+• Low-Light Edge Detection: Nocturnal "Friend-or-Foe" classification under resource-constrained conditions.
+• Inference Optimization: Optimized PyTorch pipeline via ONNX Runtime to achieve under 50 ms latency per frame (<50ms/frame).`
             };
         }
 
         // 8. Projects general
         if (q === 'projects' || q === 'proj' || q.includes('project') || q.includes('portfolio') || q.includes('built')) {
             return {
-                text: `🚀 KEY ENGINEERING PROJECTS:
-1. Friend-or-Foe Detection System (Raspberry Pi, YOLO, ONNX, Edge AI) — <50ms latency wireless IR target classification.
-2. Scalable LMS Platform (Django Ninja, React, PostgreSQL, Docker, RBAC) — 500+ active users with assessment engine.
-3. MSME Carbon Credit Trading System (Blockchain, Smart Contracts) — ₹15L grant-funded & published patent.
-4. Headless E-commerce Platform (React, Shopify API, Context API) — 90% reduction in maintenance overhead.`
+                text: `🚀 FEATURED ACTION & METRIC-DRIVEN PROJECTS:
+1. Enterprise Blockchain Supply Chain & AI Governance (Next.js, PostgreSQL, Polygon PoS, Cursor/Claude Guardrails) — Managing ₹15L MoMSME grant with deterministic AI prompt governance.
+2. Real-Time Edge AI Surveillance System (YOLO11s, Raspberry Pi 4B, OV5647 IR camera, PyTorch ONNX) — <50ms latency nocturnal Friend-or-Foe edge classification.
+3. Polygnan LMS & Autonomous AI Agents (Django Ninja, React, RBAC, n8n, RAG Agents) — 500+ active users with multi-agent workflows.`
             };
         }
 
@@ -156,55 +157,58 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
 2. P.E.S. College of Engineering (PESCE, 2021 – 2025):
    • Bachelor of Engineering (B.E.) in Information Science and Engineering
    • Final Result: CGPA 8.2 / 10.0
-   • Honors: ISTE Excellent Student of the Chapter Award (2025) & Best Performer Award (2023)`
+   • Honors: ISTE Excellent Student of the Chapter Award (2025) & Best Performer Award (2023)
+3. Indian Institute of Science (IISc Bangalore):
+   • Research Project Intern in Aerospace Dept (Oct 2024 – Jan 2025)`
             };
         }
 
-        // 11. Experience general
-        if (q === 'exp' || q === 'experience' || q.includes('intern') || q.includes('career') || q.includes('work') || q.includes('jobs')) {
+        // 11. Experience general / Research Goals / PhD
+        if (q === 'exp' || q === 'experience' || q.includes('intern') || q.includes('career') || q.includes('work') || q.includes('jobs') || q.includes('phd') || q.includes('fellowship')) {
             return {
-                text: `💼 PROFESSIONAL EXPERIENCE:
+                text: `💼 PROFESSIONAL EXPERIENCE & RESEARCH HORIZONS:
 1. Polygnan Foundation (Bangalore) — AI Intern, Fellow & Engineering Intern (Feb 2025 – Dec 2025)
-   • Built scalable LMS (Django Ninja/React) for 500+ users and automated n8n RAG pipelines.
+   • Built scalable LMS (Django Ninja/React) for 500+ users and automated n8n RAG agent workflows.
 2. IISc Bangalore (Aerospace Dept) — Research Intern (Oct 2024 – Jan 2025)
-   • Fine-tuned YOLO nano models for Kreeda.ai, accelerated inference via CUDA, augmented 6,000+ samples.`
+   • Conducted applied research in real-time edge vision (Kreeda.ai), fine-tuning YOLO nano with CUDA acceleration.
+3. Future Focus:
+   • Seeking applied research fellowships and PhD opportunities in autonomous multi-agent systems, AI reliability, and large-scale architectural innovation.`
             };
         }
 
         // 12. Tech Stack / Skills / Languages
         if (q === 'stack' || q === 'skills' || q.includes('stack') || q.includes('python') || q.includes('react') || q.includes('docker') || q.includes('tools') || q.includes('language') || q.includes('technolog')) {
             return {
-                text: `⚡ TECH STACK & SYSTEM SPECS:
-• Core Languages: Python, Java, JavaScript, SQL, HTML5/CSS3
-• Frameworks & Libraries: React, Django, Django Ninja, OpenCV, YOLO
-• AI / Deep Tech: Model Fine-Tuning, Edge AI, CUDA, ONNX, RAG, LLMs
-• Cloud & DevOps: AWS, Oracle Cloud (OCI), Google Cloud (GCP), Azure, Docker, Git, n8n, Jira
-• Databases: PostgreSQL, SQLite, Vector Databases`
+                text: `⚡ ATS-OPTIMIZED TECHNICAL SKILLS MATRIX:
+• Applied Research & AI: Machine Learning, Deep Learning, PyTorch, YOLO11s, RAG, Autonomous AI Agents, Computer Vision, ONNX Runtime, Edge AI
+• Software Engineering: System Architecture, Code Translation & Migration, Static Analysis concepts, REST APIs, Git, CI/CD, Code Review
+• Systems & Infrastructure: Linux, Ubuntu, AWS, Oracle Cloud Infrastructure (OCI), GCP, Docker, Jenkins, n8n Automation
+• Languages & Frameworks: Python, Java, C, TypeScript, JavaScript, SQL, Next.js, React, Django Ninja, PostgreSQL`
             };
         }
 
         // 13. Contact / Email / Socials / Hire
         if (q === 'contact' || q.includes('email') || q.includes('hire') || q.includes('reach') || q.includes('linkedin') || q.includes('github') || q.includes('touch') || q.includes('message')) {
             return {
-                text: `📬 GET IN TOUCH WITH GOWTHAM:
+                text: `📬 GET IN TOUCH WITH GOWTHAM C K:
 • Email: ckgowtham12@gmail.com
 • LinkedIn: https://www.linkedin.com/in/gowtham-c-k/
 • GitHub: https://github.com/GowthamCK
 • Credly: https://www.credly.com/users/gowtham-c-k/badges/credly
 • Google Dev: https://g.dev/gowthamck
 • Base Location: Mysore / Bangalore, Karnataka, India
-• Open to: Deep Tech, AI Engineering, Full-Stack & Edge AI opportunities.`
+• Open to: Applied Research Fellowships, PhD opportunities, Edge AI & Deep Tech Software Engineering roles.`
             };
         }
 
         // 14. About / Who is Gowtham / Bio
         if (q === 'about' || q.includes('who is') || q.includes('who are') || q.includes('bio') || q.includes('introduce') || q.includes('hello') || q.includes('hi') || q.includes('hey')) {
             return {
-                text: `👤 GOWTHAM C K [NEURAL_ARCHITECT // DEEP_TECH_ENGINEER]:
-• Bio: Tech Explorer and Software Engineer passionate about Deep Tech, AI, and Quantum Algorithms.
-• Current Focus: ICCSSE Scholar at RV University (CGPA 10), actively bridging AI research and production systems.
-• Major Milestones: ₹15L MSME National Hackathon Grant Winner, Published Blockchain Patent Co-Inventor, 13 Verified Cloud/AI Credentials.
-• Location: Mysore & Bangalore, India.`
+                text: `👤 GOWTHAM C K [Software Engineer & Applied AI Researcher]:
+• Profile: Software Engineer and Applied AI Researcher specializing in Edge AI, Computer Vision, AI-Assisted Software Engineering, and Enterprise Blockchain Architecture.
+• Research Focus: Privacy-Preserving Edge AI and deterministic AI governance for autonomous LLM tools.
+• Key Accreditations: ₹15L MoMSME Central Government Grant Winner, Published Blockchain Patent Co-Inventor, ICCSSE Scholar @ RV University (CGPA 10), 13 Verified Cloud/AI Credentials.
+• Base Location: Mysore & Bangalore, India.`
             };
         }
 
@@ -214,11 +218,11 @@ You can also ask natural questions like: "Where did he intern?", "What is his CG
             text: `⚠️ [TERMINAL_GUARD]: I am Gowtham's neural portfolio assistant. I only provide verified factual information regarding Gowtham C K's career, research, projects, skills, education, and achievements.
 
 Try asking about:
-• "Tell me about the ₹15L MSME grant"
+• "Tell me about the ₹15L MSME grant & AI governance"
 • "What research did he do at IISc Bangalore?"
-• "Explain the Friend-or-Foe edge AI project"
-• "What are his 13 verified certifications?"
-• "What is his tech stack and CGPA?"
+• "Explain the Friend-or-Foe YOLO11s edge AI project"
+• "What are his ATS skills and 13 verified certifications?"
+• "What are his PhD and fellowship research goals?"
 • "How can I contact him?"`
         };
     };
