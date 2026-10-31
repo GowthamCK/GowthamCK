@@ -13,6 +13,7 @@ const verifiedBadges = [
         name: "AWS Academy Graduate - Cloud Architecting",
         issuer: "Amazon Web Services Training & Certification",
         code: "AWS_ARCHITECT",
+        imageUrl: "https://images.credly.com/size/340x340/images/fcafd0c9-42da-4703-a191-0c397203dc1b/blob",
         verifyUrl: "https://www.credly.com/badges/a90c4554-f9a0-494f-8973-44ab488988e8",
         type: "credly",
         credlyId: "a90c4554-f9a0-494f-8973-44ab488988e8"
@@ -23,6 +24,7 @@ const verifiedBadges = [
         name: "AWS Academy Graduate - Cloud Foundations",
         issuer: "Amazon Web Services Training & Certification",
         code: "AWS_FOUNDATIONS",
+        imageUrl: "https://images.credly.com/size/340x340/images/e3541a0c-dd4a-4820-8052-5001006efc85/blob",
         verifyUrl: "https://www.credly.com/badges/ded8bc5f-6db4-4add-8bb3-a32bfc76605c",
         type: "credly",
         credlyId: "ded8bc5f-6db4-4add-8bb3-a32bfc76605c"
@@ -225,25 +227,19 @@ export default function Certifications() {
                                     </div>
 
                                     {/* Badge Visual */}
-                                    <div className="bg-white rounded-xl p-3 shadow-md flex items-center justify-center w-full min-h-[285px] overflow-hidden my-2">
-                                        {badge.type === 'credly' ? (
-                                            <iframe
-                                                src={`https://www.credly.com/embedded_badge/${badge.credlyId}`}
-                                                width="150"
-                                                height="270"
-                                                frameBorder="0"
-                                                scrolling="no"
-                                                title={badge.name}
-                                                className="rounded"
-                                            />
-                                        ) : (
-                                            <img
-                                                src={badge.imageUrl}
-                                                alt={badge.name}
-                                                className="max-h-[185px] max-w-[220px] w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-                                                loading="lazy"
-                                            />
-                                        )}
+                                    <div className="relative flex items-center justify-center w-full min-h-[190px] sm:min-h-[210px] overflow-hidden my-2 py-3">
+                                        {/* Ambient accent cyber glow behind transparent badge */}
+                                        <div className="absolute w-28 h-28 rounded-full bg-accent/5 blur-2xl pointer-events-none group-hover:bg-accent/20 transition-all duration-500" />
+                                        <img
+                                            src={badge.imageUrl}
+                                            alt={badge.name}
+                                            className={`max-h-[160px] sm:max-h-[175px] max-w-[210px] w-auto h-auto object-contain group-hover:scale-105 transition-all duration-300 relative z-10 ${
+                                                badge.provider === 'Coursera'
+                                                    ? 'rounded-lg border border-surface-border/70 shadow-md group-hover:border-accent/40'
+                                                    : 'group-hover:drop-shadow-[0_0_20px_rgba(0,255,209,0.35)]'
+                                            }`}
+                                            loading="lazy"
+                                        />
                                     </div>
 
                                     {/* Footer Details */}

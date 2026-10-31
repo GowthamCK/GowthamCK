@@ -33,3 +33,10 @@ Thumbs.db
 
 # Testing
 coverage
+
+# LaTeX & Resume
+resume.tex
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz
